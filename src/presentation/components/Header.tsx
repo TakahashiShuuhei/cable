@@ -2,7 +2,7 @@ import { useTheme } from '../contexts/ThemeContext'
 import { useCalculation } from '../contexts/CalculationContext'
 
 export function Header() {
-  const { theme, toggleTheme } = useTheme()
+  const { toggleTheme } = useTheme()
   const { clearAll } = useCalculation()
 
   return (
@@ -19,9 +19,9 @@ export function Header() {
         <button
           onClick={toggleTheme}
           className="px-3 py-1.5 text-sm rounded bg-white/20 hover:bg-white/30 transition-colors"
-          title={theme === 'simple' ? '現場モードに切替' : 'シンプルモードに切替'}
+          title="テーマを切り替え"
         >
-          {theme === 'simple' ? '現場' : 'シンプル'}
+          テーマ切替
         </button>
       </div>
     </header>
