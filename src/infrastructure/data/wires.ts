@@ -34,6 +34,10 @@ export const wireTypes: WireType[] = [
   { id: 'cv', name: 'CV', fullName: '600V 架橋ポリエチレン絶縁ビニルシースケーブル', description: '電力配線用、耐熱性優' },
   { id: 'cvd', name: 'CVD/T/Q', fullName: '600V 架橋ポリエチレン絶縁ビニルシースケーブル（より合わせ型）', description: '電力幹線用、大容量' },
   { id: 'kiv', name: 'KIV', fullName: '600V 機器用単心ビニル絶縁電線', description: '配電盤内配線用' },
+  { id: 'vct', name: 'VCT', fullName: '600V ビニルキャブタイヤケーブル', description: '移動用電気機器配線用' },
+  { id: 'vctf', name: 'VCTF', fullName: '300V ビニルキャブタイヤ丸形コード', description: '小型電気器具配線用' },
+  { id: '2ct', name: '2CT', fullName: '2種クロロプレンキャブタイヤケーブル', description: '移動用電気機器配線用、耐油性' },
+  { id: '2pnct', name: '2PNCT', fullName: '2種EPゴム/クロロプレンキャブタイヤケーブル', description: '移動用電気機器配線用、高耐久' },
 ]
 
 // 断面積計算ヘルパー（外径から）
@@ -201,6 +205,233 @@ export const wireSpecs: WireSpec[] = [
   { id: 'cvd-250sq-3c', typeId: 'cvd', size: '250', unit: 'sq', cores: 3, outerDiameter: 60.0, crossSectionArea: circleArea(60.0), allowableCurrent: 535 },
   // 325sq
   { id: 'cvd-325sq-3c', typeId: 'cvd', size: '325', unit: 'sq', cores: 3, outerDiameter: 66.0, crossSectionArea: circleArea(66.0), allowableCurrent: 635 },
+
+  // ============================================
+  // VCT（600V ビニルキャブタイヤケーブル）
+  // ============================================
+  // 0.75sq
+  { id: 'vct-0.75sq-2c', typeId: 'vct', size: '0.75', unit: 'sq', cores: 2, outerDiameter: 8.8, crossSectionArea: circleArea(8.8), allowableCurrent: 12 },
+  { id: 'vct-0.75sq-3c', typeId: 'vct', size: '0.75', unit: 'sq', cores: 3, outerDiameter: 9.2, crossSectionArea: circleArea(9.2), allowableCurrent: 11 },
+  { id: 'vct-0.75sq-4c', typeId: 'vct', size: '0.75', unit: 'sq', cores: 4, outerDiameter: 9.9, crossSectionArea: circleArea(9.9), allowableCurrent: 10 },
+  { id: 'vct-0.75sq-5c', typeId: 'vct', size: '0.75', unit: 'sq', cores: 5, outerDiameter: 10.9, crossSectionArea: circleArea(10.9), allowableCurrent: 9 },
+  { id: 'vct-0.75sq-6c', typeId: 'vct', size: '0.75', unit: 'sq', cores: 6, outerDiameter: 11.7, crossSectionArea: circleArea(11.7), allowableCurrent: 8 },
+  { id: 'vct-0.75sq-7c', typeId: 'vct', size: '0.75', unit: 'sq', cores: 7, outerDiameter: 11.7, crossSectionArea: circleArea(11.7), allowableCurrent: 8 },
+  // 1.25sq
+  { id: 'vct-1.25sq-2c', typeId: 'vct', size: '1.25', unit: 'sq', cores: 2, outerDiameter: 9.6, crossSectionArea: circleArea(9.6), allowableCurrent: 17 },
+  { id: 'vct-1.25sq-3c', typeId: 'vct', size: '1.25', unit: 'sq', cores: 3, outerDiameter: 10.1, crossSectionArea: circleArea(10.1), allowableCurrent: 15 },
+  { id: 'vct-1.25sq-4c', typeId: 'vct', size: '1.25', unit: 'sq', cores: 4, outerDiameter: 11.1, crossSectionArea: circleArea(11.1), allowableCurrent: 13 },
+  { id: 'vct-1.25sq-5c', typeId: 'vct', size: '1.25', unit: 'sq', cores: 5, outerDiameter: 12.2, crossSectionArea: circleArea(12.2), allowableCurrent: 13 },
+  { id: 'vct-1.25sq-6c', typeId: 'vct', size: '1.25', unit: 'sq', cores: 6, outerDiameter: 13.1, crossSectionArea: circleArea(13.1), allowableCurrent: 11 },
+  { id: 'vct-1.25sq-7c', typeId: 'vct', size: '1.25', unit: 'sq', cores: 7, outerDiameter: 13.1, crossSectionArea: circleArea(13.1), allowableCurrent: 11 },
+  // 2sq
+  { id: 'vct-2sq-2c', typeId: 'vct', size: '2', unit: 'sq', cores: 2, outerDiameter: 10.4, crossSectionArea: circleArea(10.4), allowableCurrent: 22 },
+  { id: 'vct-2sq-3c', typeId: 'vct', size: '2', unit: 'sq', cores: 3, outerDiameter: 10.9, crossSectionArea: circleArea(10.9), allowableCurrent: 19 },
+  { id: 'vct-2sq-4c', typeId: 'vct', size: '2', unit: 'sq', cores: 4, outerDiameter: 11.8, crossSectionArea: circleArea(11.8), allowableCurrent: 17 },
+  { id: 'vct-2sq-5c', typeId: 'vct', size: '2', unit: 'sq', cores: 5, outerDiameter: 13.0, crossSectionArea: circleArea(13.0), allowableCurrent: 17 },
+  { id: 'vct-2sq-6c', typeId: 'vct', size: '2', unit: 'sq', cores: 6, outerDiameter: 14.2, crossSectionArea: circleArea(14.2), allowableCurrent: 15 },
+  { id: 'vct-2sq-7c', typeId: 'vct', size: '2', unit: 'sq', cores: 7, outerDiameter: 14.2, crossSectionArea: circleArea(14.2), allowableCurrent: 14 },
+  // 3.5sq
+  { id: 'vct-3.5sq-2c', typeId: 'vct', size: '3.5', unit: 'sq', cores: 2, outerDiameter: 11.8, crossSectionArea: circleArea(11.8), allowableCurrent: 32 },
+  { id: 'vct-3.5sq-3c', typeId: 'vct', size: '3.5', unit: 'sq', cores: 3, outerDiameter: 12.6, crossSectionArea: circleArea(12.6), allowableCurrent: 27 },
+  { id: 'vct-3.5sq-4c', typeId: 'vct', size: '3.5', unit: 'sq', cores: 4, outerDiameter: 13.9, crossSectionArea: circleArea(13.9), allowableCurrent: 25 },
+  { id: 'vct-3.5sq-5c', typeId: 'vct', size: '3.5', unit: 'sq', cores: 5, outerDiameter: 15.1, crossSectionArea: circleArea(15.1), allowableCurrent: 25 },
+  { id: 'vct-3.5sq-6c', typeId: 'vct', size: '3.5', unit: 'sq', cores: 6, outerDiameter: 16.5, crossSectionArea: circleArea(16.5), allowableCurrent: 21 },
+  // 5.5sq
+  { id: 'vct-5.5sq-2c', typeId: 'vct', size: '5.5', unit: 'sq', cores: 2, outerDiameter: 14.2, crossSectionArea: circleArea(14.2), allowableCurrent: 41 },
+  { id: 'vct-5.5sq-3c', typeId: 'vct', size: '5.5', unit: 'sq', cores: 3, outerDiameter: 15.0, crossSectionArea: circleArea(15.0), allowableCurrent: 35 },
+  { id: 'vct-5.5sq-4c', typeId: 'vct', size: '5.5', unit: 'sq', cores: 4, outerDiameter: 16.5, crossSectionArea: circleArea(16.5), allowableCurrent: 32 },
+  // 8sq
+  { id: 'vct-8sq-2c', typeId: 'vct', size: '8', unit: 'sq', cores: 2, outerDiameter: 16.4, crossSectionArea: circleArea(16.4), allowableCurrent: 51 },
+  { id: 'vct-8sq-3c', typeId: 'vct', size: '8', unit: 'sq', cores: 3, outerDiameter: 17.5, crossSectionArea: circleArea(17.5), allowableCurrent: 43 },
+  { id: 'vct-8sq-4c', typeId: 'vct', size: '8', unit: 'sq', cores: 4, outerDiameter: 19.3, crossSectionArea: circleArea(19.3), allowableCurrent: 39 },
+  // 14sq
+  { id: 'vct-14sq-2c', typeId: 'vct', size: '14', unit: 'sq', cores: 2, outerDiameter: 20.0, crossSectionArea: circleArea(20.0), allowableCurrent: 72 },
+  { id: 'vct-14sq-3c', typeId: 'vct', size: '14', unit: 'sq', cores: 3, outerDiameter: 21.4, crossSectionArea: circleArea(21.4), allowableCurrent: 62 },
+  { id: 'vct-14sq-4c', typeId: 'vct', size: '14', unit: 'sq', cores: 4, outerDiameter: 23.6, crossSectionArea: circleArea(23.6), allowableCurrent: 56 },
+  // 22sq
+  { id: 'vct-22sq-2c', typeId: 'vct', size: '22', unit: 'sq', cores: 2, outerDiameter: 25.8, crossSectionArea: circleArea(25.8), allowableCurrent: 97 },
+  { id: 'vct-22sq-3c', typeId: 'vct', size: '22', unit: 'sq', cores: 3, outerDiameter: 27.6, crossSectionArea: circleArea(27.6), allowableCurrent: 83 },
+  { id: 'vct-22sq-4c', typeId: 'vct', size: '22', unit: 'sq', cores: 4, outerDiameter: 30.4, crossSectionArea: circleArea(30.4), allowableCurrent: 75 },
+  // 38sq
+  { id: 'vct-38sq-2c', typeId: 'vct', size: '38', unit: 'sq', cores: 2, outerDiameter: 31.4, crossSectionArea: circleArea(31.4), allowableCurrent: 130 },
+  { id: 'vct-38sq-3c', typeId: 'vct', size: '38', unit: 'sq', cores: 3, outerDiameter: 33.6, crossSectionArea: circleArea(33.6), allowableCurrent: 110 },
+  { id: 'vct-38sq-4c', typeId: 'vct', size: '38', unit: 'sq', cores: 4, outerDiameter: 37.3, crossSectionArea: circleArea(37.3), allowableCurrent: 100 },
+  // 60sq
+  { id: 'vct-60sq-3c', typeId: 'vct', size: '60', unit: 'sq', cores: 3, outerDiameter: 39.8, crossSectionArea: circleArea(39.8), allowableCurrent: 150 },
+  { id: 'vct-60sq-4c', typeId: 'vct', size: '60', unit: 'sq', cores: 4, outerDiameter: 44.1, crossSectionArea: circleArea(44.1), allowableCurrent: 135 },
+  // 100sq
+  { id: 'vct-100sq-3c', typeId: 'vct', size: '100', unit: 'sq', cores: 3, outerDiameter: 49.6, crossSectionArea: circleArea(49.6), allowableCurrent: 215 },
+
+  // ============================================
+  // VCTF（300V ビニルキャブタイヤ丸形コード）
+  // ============================================
+  // 0.3sq
+  { id: 'vctf-0.3sq-2c', typeId: 'vctf', size: '0.3', unit: 'sq', cores: 2, outerDiameter: 5.0, crossSectionArea: circleArea(5.0), allowableCurrent: 6 },
+  { id: 'vctf-0.3sq-3c', typeId: 'vctf', size: '0.3', unit: 'sq', cores: 3, outerDiameter: 5.2, crossSectionArea: circleArea(5.2), allowableCurrent: 5 },
+  { id: 'vctf-0.3sq-4c', typeId: 'vctf', size: '0.3', unit: 'sq', cores: 4, outerDiameter: 5.6, crossSectionArea: circleArea(5.6), allowableCurrent: 5 },
+  { id: 'vctf-0.3sq-5c', typeId: 'vctf', size: '0.3', unit: 'sq', cores: 5, outerDiameter: 6.1, crossSectionArea: circleArea(6.1), allowableCurrent: 4 },
+  { id: 'vctf-0.3sq-6c', typeId: 'vctf', size: '0.3', unit: 'sq', cores: 6, outerDiameter: 6.5, crossSectionArea: circleArea(6.5), allowableCurrent: 4 },
+  { id: 'vctf-0.3sq-7c', typeId: 'vctf', size: '0.3', unit: 'sq', cores: 7, outerDiameter: 6.5, crossSectionArea: circleArea(6.5), allowableCurrent: 4 },
+  { id: 'vctf-0.3sq-8c', typeId: 'vctf', size: '0.3', unit: 'sq', cores: 8, outerDiameter: 7.3, crossSectionArea: circleArea(7.3), allowableCurrent: 4 },
+  { id: 'vctf-0.3sq-10c', typeId: 'vctf', size: '0.3', unit: 'sq', cores: 10, outerDiameter: 8.3, crossSectionArea: circleArea(8.3), allowableCurrent: 3 },
+  { id: 'vctf-0.3sq-12c', typeId: 'vctf', size: '0.3', unit: 'sq', cores: 12, outerDiameter: 8.5, crossSectionArea: circleArea(8.5), allowableCurrent: 3 },
+  // 0.5sq
+  { id: 'vctf-0.5sq-2c', typeId: 'vctf', size: '0.5', unit: 'sq', cores: 2, outerDiameter: 6.2, crossSectionArea: circleArea(6.2), allowableCurrent: 9 },
+  { id: 'vctf-0.5sq-3c', typeId: 'vctf', size: '0.5', unit: 'sq', cores: 3, outerDiameter: 6.5, crossSectionArea: circleArea(6.5), allowableCurrent: 7 },
+  { id: 'vctf-0.5sq-4c', typeId: 'vctf', size: '0.5', unit: 'sq', cores: 4, outerDiameter: 7.1, crossSectionArea: circleArea(7.1), allowableCurrent: 7 },
+  { id: 'vctf-0.5sq-5c', typeId: 'vctf', size: '0.5', unit: 'sq', cores: 5, outerDiameter: 7.7, crossSectionArea: circleArea(7.7), allowableCurrent: 6 },
+  { id: 'vctf-0.5sq-6c', typeId: 'vctf', size: '0.5', unit: 'sq', cores: 6, outerDiameter: 8.3, crossSectionArea: circleArea(8.3), allowableCurrent: 6 },
+  { id: 'vctf-0.5sq-7c', typeId: 'vctf', size: '0.5', unit: 'sq', cores: 7, outerDiameter: 8.3, crossSectionArea: circleArea(8.3), allowableCurrent: 6 },
+  { id: 'vctf-0.5sq-8c', typeId: 'vctf', size: '0.5', unit: 'sq', cores: 8, outerDiameter: 9.2, crossSectionArea: circleArea(9.2), allowableCurrent: 5 },
+  { id: 'vctf-0.5sq-10c', typeId: 'vctf', size: '0.5', unit: 'sq', cores: 10, outerDiameter: 10.7, crossSectionArea: circleArea(10.7), allowableCurrent: 5 },
+  { id: 'vctf-0.5sq-12c', typeId: 'vctf', size: '0.5', unit: 'sq', cores: 12, outerDiameter: 11.0, crossSectionArea: circleArea(11.0), allowableCurrent: 5 },
+  // 0.75sq
+  { id: 'vctf-0.75sq-2c', typeId: 'vctf', size: '0.75', unit: 'sq', cores: 2, outerDiameter: 6.6, crossSectionArea: circleArea(6.6), allowableCurrent: 11 },
+  { id: 'vctf-0.75sq-3c', typeId: 'vctf', size: '0.75', unit: 'sq', cores: 3, outerDiameter: 7.0, crossSectionArea: circleArea(7.0), allowableCurrent: 10 },
+  { id: 'vctf-0.75sq-4c', typeId: 'vctf', size: '0.75', unit: 'sq', cores: 4, outerDiameter: 7.6, crossSectionArea: circleArea(7.6), allowableCurrent: 9 },
+  { id: 'vctf-0.75sq-5c', typeId: 'vctf', size: '0.75', unit: 'sq', cores: 5, outerDiameter: 8.2, crossSectionArea: circleArea(8.2), allowableCurrent: 8 },
+  { id: 'vctf-0.75sq-6c', typeId: 'vctf', size: '0.75', unit: 'sq', cores: 6, outerDiameter: 8.9, crossSectionArea: circleArea(8.9), allowableCurrent: 8 },
+  { id: 'vctf-0.75sq-7c', typeId: 'vctf', size: '0.75', unit: 'sq', cores: 7, outerDiameter: 8.9, crossSectionArea: circleArea(8.9), allowableCurrent: 7 },
+  { id: 'vctf-0.75sq-8c', typeId: 'vctf', size: '0.75', unit: 'sq', cores: 8, outerDiameter: 9.9, crossSectionArea: circleArea(9.9), allowableCurrent: 7 },
+  { id: 'vctf-0.75sq-10c', typeId: 'vctf', size: '0.75', unit: 'sq', cores: 10, outerDiameter: 11.5, crossSectionArea: circleArea(11.5), allowableCurrent: 7 },
+  { id: 'vctf-0.75sq-12c', typeId: 'vctf', size: '0.75', unit: 'sq', cores: 12, outerDiameter: 11.9, crossSectionArea: circleArea(11.9), allowableCurrent: 6 },
+  // 1.25sq
+  { id: 'vctf-1.25sq-2c', typeId: 'vctf', size: '1.25', unit: 'sq', cores: 2, outerDiameter: 7.4, crossSectionArea: circleArea(7.4), allowableCurrent: 16 },
+  { id: 'vctf-1.25sq-3c', typeId: 'vctf', size: '1.25', unit: 'sq', cores: 3, outerDiameter: 7.8, crossSectionArea: circleArea(7.8), allowableCurrent: 13 },
+  { id: 'vctf-1.25sq-4c', typeId: 'vctf', size: '1.25', unit: 'sq', cores: 4, outerDiameter: 8.5, crossSectionArea: circleArea(8.5), allowableCurrent: 12 },
+  { id: 'vctf-1.25sq-5c', typeId: 'vctf', size: '1.25', unit: 'sq', cores: 5, outerDiameter: 9.3, crossSectionArea: circleArea(9.3), allowableCurrent: 11 },
+  { id: 'vctf-1.25sq-6c', typeId: 'vctf', size: '1.25', unit: 'sq', cores: 6, outerDiameter: 10.1, crossSectionArea: circleArea(10.1), allowableCurrent: 11 },
+  { id: 'vctf-1.25sq-7c', typeId: 'vctf', size: '1.25', unit: 'sq', cores: 7, outerDiameter: 10.1, crossSectionArea: circleArea(10.1), allowableCurrent: 10 },
+  { id: 'vctf-1.25sq-8c', typeId: 'vctf', size: '1.25', unit: 'sq', cores: 8, outerDiameter: 11.2, crossSectionArea: circleArea(11.2), allowableCurrent: 10 },
+  { id: 'vctf-1.25sq-10c', typeId: 'vctf', size: '1.25', unit: 'sq', cores: 10, outerDiameter: 13.1, crossSectionArea: circleArea(13.1), allowableCurrent: 9 },
+  { id: 'vctf-1.25sq-12c', typeId: 'vctf', size: '1.25', unit: 'sq', cores: 12, outerDiameter: 13.7, crossSectionArea: circleArea(13.7), allowableCurrent: 9 },
+  // 2sq
+  { id: 'vctf-2sq-2c', typeId: 'vctf', size: '2', unit: 'sq', cores: 2, outerDiameter: 8.0, crossSectionArea: circleArea(8.0), allowableCurrent: 20 },
+  { id: 'vctf-2sq-3c', typeId: 'vctf', size: '2', unit: 'sq', cores: 3, outerDiameter: 8.5, crossSectionArea: circleArea(8.5), allowableCurrent: 17 },
+  { id: 'vctf-2sq-4c', typeId: 'vctf', size: '2', unit: 'sq', cores: 4, outerDiameter: 9.2, crossSectionArea: circleArea(9.2), allowableCurrent: 16 },
+  { id: 'vctf-2sq-5c', typeId: 'vctf', size: '2', unit: 'sq', cores: 5, outerDiameter: 10.1, crossSectionArea: circleArea(10.1), allowableCurrent: 14 },
+  { id: 'vctf-2sq-6c', typeId: 'vctf', size: '2', unit: 'sq', cores: 6, outerDiameter: 11.0, crossSectionArea: circleArea(11.0), allowableCurrent: 14 },
+  { id: 'vctf-2sq-7c', typeId: 'vctf', size: '2', unit: 'sq', cores: 7, outerDiameter: 11.0, crossSectionArea: circleArea(11.0), allowableCurrent: 13 },
+  { id: 'vctf-2sq-8c', typeId: 'vctf', size: '2', unit: 'sq', cores: 8, outerDiameter: 12.2, crossSectionArea: circleArea(12.2), allowableCurrent: 12 },
+  { id: 'vctf-2sq-10c', typeId: 'vctf', size: '2', unit: 'sq', cores: 10, outerDiameter: 14.5, crossSectionArea: circleArea(14.5), allowableCurrent: 12 },
+  { id: 'vctf-2sq-12c', typeId: 'vctf', size: '2', unit: 'sq', cores: 12, outerDiameter: 15.0, crossSectionArea: circleArea(15.0), allowableCurrent: 11 },
+
+  // ============================================
+  // 2CT（2種クロロプレンキャブタイヤケーブル）
+  // ============================================
+  // 0.75sq
+  { id: '2ct-0.75sq-2c', typeId: '2ct', size: '0.75', unit: 'sq', cores: 2, outerDiameter: 10.4, crossSectionArea: circleArea(10.4), allowableCurrent: 12 },
+  { id: '2ct-0.75sq-3c', typeId: '2ct', size: '0.75', unit: 'sq', cores: 3, outerDiameter: 10.9, crossSectionArea: circleArea(10.9), allowableCurrent: 10 },
+  { id: '2ct-0.75sq-4c', typeId: '2ct', size: '0.75', unit: 'sq', cores: 4, outerDiameter: 11.8, crossSectionArea: circleArea(11.8), allowableCurrent: 9 },
+  // 1.25sq
+  { id: '2ct-1.25sq-2c', typeId: '2ct', size: '1.25', unit: 'sq', cores: 2, outerDiameter: 11.2, crossSectionArea: circleArea(11.2), allowableCurrent: 16 },
+  { id: '2ct-1.25sq-3c', typeId: '2ct', size: '1.25', unit: 'sq', cores: 3, outerDiameter: 11.8, crossSectionArea: circleArea(11.8), allowableCurrent: 14 },
+  { id: '2ct-1.25sq-4c', typeId: '2ct', size: '1.25', unit: 'sq', cores: 4, outerDiameter: 13.0, crossSectionArea: circleArea(13.0), allowableCurrent: 13 },
+  // 2sq
+  { id: '2ct-2sq-2c', typeId: '2ct', size: '2', unit: 'sq', cores: 2, outerDiameter: 11.8, crossSectionArea: circleArea(11.8), allowableCurrent: 22 },
+  { id: '2ct-2sq-3c', typeId: '2ct', size: '2', unit: 'sq', cores: 3, outerDiameter: 12.6, crossSectionArea: circleArea(12.6), allowableCurrent: 19 },
+  { id: '2ct-2sq-4c', typeId: '2ct', size: '2', unit: 'sq', cores: 4, outerDiameter: 13.9, crossSectionArea: circleArea(13.9), allowableCurrent: 17 },
+  // 3.5sq
+  { id: '2ct-3.5sq-2c', typeId: '2ct', size: '3.5', unit: 'sq', cores: 2, outerDiameter: 13.4, crossSectionArea: circleArea(13.4), allowableCurrent: 32 },
+  { id: '2ct-3.5sq-3c', typeId: '2ct', size: '3.5', unit: 'sq', cores: 3, outerDiameter: 14.3, crossSectionArea: circleArea(14.3), allowableCurrent: 28 },
+  { id: '2ct-3.5sq-4c', typeId: '2ct', size: '3.5', unit: 'sq', cores: 4, outerDiameter: 15.8, crossSectionArea: circleArea(15.8), allowableCurrent: 25 },
+  // 5.5sq
+  { id: '2ct-5.5sq-2c', typeId: '2ct', size: '5.5', unit: 'sq', cores: 2, outerDiameter: 14.8, crossSectionArea: circleArea(14.8), allowableCurrent: 41 },
+  { id: '2ct-5.5sq-3c', typeId: '2ct', size: '5.5', unit: 'sq', cores: 3, outerDiameter: 15.8, crossSectionArea: circleArea(15.8), allowableCurrent: 36 },
+  { id: '2ct-5.5sq-4c', typeId: '2ct', size: '5.5', unit: 'sq', cores: 4, outerDiameter: 17.4, crossSectionArea: circleArea(17.4), allowableCurrent: 32 },
+  // 8sq
+  { id: '2ct-8sq-2c', typeId: '2ct', size: '8', unit: 'sq', cores: 2, outerDiameter: 16.2, crossSectionArea: circleArea(16.2), allowableCurrent: 51 },
+  { id: '2ct-8sq-3c', typeId: '2ct', size: '8', unit: 'sq', cores: 3, outerDiameter: 17.3, crossSectionArea: circleArea(17.3), allowableCurrent: 44 },
+  { id: '2ct-8sq-4c', typeId: '2ct', size: '8', unit: 'sq', cores: 4, outerDiameter: 19.1, crossSectionArea: circleArea(19.1), allowableCurrent: 39 },
+  // 14sq
+  { id: '2ct-14sq-2c', typeId: '2ct', size: '14', unit: 'sq', cores: 2, outerDiameter: 20.2, crossSectionArea: circleArea(20.2), allowableCurrent: 71 },
+  { id: '2ct-14sq-3c', typeId: '2ct', size: '14', unit: 'sq', cores: 3, outerDiameter: 21.6, crossSectionArea: circleArea(21.6), allowableCurrent: 62 },
+  { id: '2ct-14sq-4c', typeId: '2ct', size: '14', unit: 'sq', cores: 4, outerDiameter: 24.0, crossSectionArea: circleArea(24.0), allowableCurrent: 55 },
+  // 22sq
+  { id: '2ct-22sq-2c', typeId: '2ct', size: '22', unit: 'sq', cores: 2, outerDiameter: 25.2, crossSectionArea: circleArea(25.2), allowableCurrent: 95 },
+  { id: '2ct-22sq-3c', typeId: '2ct', size: '22', unit: 'sq', cores: 3, outerDiameter: 27.0, crossSectionArea: circleArea(27.0), allowableCurrent: 83 },
+  { id: '2ct-22sq-4c', typeId: '2ct', size: '22', unit: 'sq', cores: 4, outerDiameter: 29.9, crossSectionArea: circleArea(29.9), allowableCurrent: 74 },
+  // 38sq
+  { id: '2ct-38sq-2c', typeId: '2ct', size: '38', unit: 'sq', cores: 2, outerDiameter: 31.8, crossSectionArea: circleArea(31.8), allowableCurrent: 130 },
+  { id: '2ct-38sq-3c', typeId: '2ct', size: '38', unit: 'sq', cores: 3, outerDiameter: 34.2, crossSectionArea: circleArea(34.2), allowableCurrent: 110 },
+  { id: '2ct-38sq-4c', typeId: '2ct', size: '38', unit: 'sq', cores: 4, outerDiameter: 37.9, crossSectionArea: circleArea(37.9), allowableCurrent: 100 },
+  // 60sq
+  { id: '2ct-60sq-3c', typeId: '2ct', size: '60', unit: 'sq', cores: 3, outerDiameter: 40.2, crossSectionArea: circleArea(40.2), allowableCurrent: 150 },
+  { id: '2ct-60sq-4c', typeId: '2ct', size: '60', unit: 'sq', cores: 4, outerDiameter: 44.8, crossSectionArea: circleArea(44.8), allowableCurrent: 135 },
+  // 100sq
+  { id: '2ct-100sq-3c', typeId: '2ct', size: '100', unit: 'sq', cores: 3, outerDiameter: 51.5, crossSectionArea: circleArea(51.5), allowableCurrent: 215 },
+  { id: '2ct-100sq-4c', typeId: '2ct', size: '100', unit: 'sq', cores: 4, outerDiameter: 57.3, crossSectionArea: circleArea(57.3), allowableCurrent: 197 },
+  // 150sq
+  { id: '2ct-150sq-3c', typeId: '2ct', size: '150', unit: 'sq', cores: 3, outerDiameter: 60.0, crossSectionArea: circleArea(60.0), allowableCurrent: 271 },
+
+  // ============================================
+  // 2PNCT（2種EPゴム/クロロプレンキャブタイヤケーブル）
+  // ============================================
+  // 0.75sq
+  { id: '2pnct-0.75sq-2c', typeId: '2pnct', size: '0.75', unit: 'sq', cores: 2, outerDiameter: 9.0, crossSectionArea: circleArea(9.0), allowableCurrent: 15 },
+  { id: '2pnct-0.75sq-3c', typeId: '2pnct', size: '0.75', unit: 'sq', cores: 3, outerDiameter: 9.4, crossSectionArea: circleArea(9.4), allowableCurrent: 13 },
+  { id: '2pnct-0.75sq-4c', typeId: '2pnct', size: '0.75', unit: 'sq', cores: 4, outerDiameter: 10.4, crossSectionArea: circleArea(10.4), allowableCurrent: 12 },
+  { id: '2pnct-0.75sq-5c', typeId: '2pnct', size: '0.75', unit: 'sq', cores: 5, outerDiameter: 11.2, crossSectionArea: circleArea(11.2), allowableCurrent: 11 },
+  { id: '2pnct-0.75sq-6c', typeId: '2pnct', size: '0.75', unit: 'sq', cores: 6, outerDiameter: 12.5, crossSectionArea: circleArea(12.5), allowableCurrent: 10 },
+  { id: '2pnct-0.75sq-7c', typeId: '2pnct', size: '0.75', unit: 'sq', cores: 7, outerDiameter: 13.4, crossSectionArea: circleArea(13.4), allowableCurrent: 10 },
+  // 1.25sq
+  { id: '2pnct-1.25sq-2c', typeId: '2pnct', size: '1.25', unit: 'sq', cores: 2, outerDiameter: 9.8, crossSectionArea: circleArea(9.8), allowableCurrent: 21 },
+  { id: '2pnct-1.25sq-3c', typeId: '2pnct', size: '1.25', unit: 'sq', cores: 3, outerDiameter: 10.5, crossSectionArea: circleArea(10.5), allowableCurrent: 18 },
+  { id: '2pnct-1.25sq-4c', typeId: '2pnct', size: '1.25', unit: 'sq', cores: 4, outerDiameter: 11.3, crossSectionArea: circleArea(11.3), allowableCurrent: 16 },
+  { id: '2pnct-1.25sq-5c', typeId: '2pnct', size: '1.25', unit: 'sq', cores: 5, outerDiameter: 12.4, crossSectionArea: circleArea(12.4), allowableCurrent: 15 },
+  { id: '2pnct-1.25sq-6c', typeId: '2pnct', size: '1.25', unit: 'sq', cores: 6, outerDiameter: 13.7, crossSectionArea: circleArea(13.7), allowableCurrent: 14 },
+  { id: '2pnct-1.25sq-7c', typeId: '2pnct', size: '1.25', unit: 'sq', cores: 7, outerDiameter: 14.9, crossSectionArea: circleArea(14.9), allowableCurrent: 14 },
+  // 2sq
+  { id: '2pnct-2sq-2c', typeId: '2pnct', size: '2', unit: 'sq', cores: 2, outerDiameter: 10.6, crossSectionArea: circleArea(10.6), allowableCurrent: 27 },
+  { id: '2pnct-2sq-3c', typeId: '2pnct', size: '2', unit: 'sq', cores: 3, outerDiameter: 11.1, crossSectionArea: circleArea(11.1), allowableCurrent: 23 },
+  { id: '2pnct-2sq-4c', typeId: '2pnct', size: '2', unit: 'sq', cores: 4, outerDiameter: 12.2, crossSectionArea: circleArea(12.2), allowableCurrent: 21 },
+  { id: '2pnct-2sq-5c', typeId: '2pnct', size: '2', unit: 'sq', cores: 5, outerDiameter: 13.3, crossSectionArea: circleArea(13.3), allowableCurrent: 19 },
+  { id: '2pnct-2sq-6c', typeId: '2pnct', size: '2', unit: 'sq', cores: 6, outerDiameter: 14.9, crossSectionArea: circleArea(14.9), allowableCurrent: 18 },
+  { id: '2pnct-2sq-7c', typeId: '2pnct', size: '2', unit: 'sq', cores: 7, outerDiameter: 16.2, crossSectionArea: circleArea(16.2), allowableCurrent: 18 },
+  // 3.5sq
+  { id: '2pnct-3.5sq-2c', typeId: '2pnct', size: '3.5', unit: 'sq', cores: 2, outerDiameter: 12.2, crossSectionArea: circleArea(12.2), allowableCurrent: 39 },
+  { id: '2pnct-3.5sq-3c', typeId: '2pnct', size: '3.5', unit: 'sq', cores: 3, outerDiameter: 12.9, crossSectionArea: circleArea(12.9), allowableCurrent: 33 },
+  { id: '2pnct-3.5sq-4c', typeId: '2pnct', size: '3.5', unit: 'sq', cores: 4, outerDiameter: 14.1, crossSectionArea: circleArea(14.1), allowableCurrent: 30 },
+  { id: '2pnct-3.5sq-5c', typeId: '2pnct', size: '3.5', unit: 'sq', cores: 5, outerDiameter: 15.5, crossSectionArea: circleArea(15.5), allowableCurrent: 28 },
+  { id: '2pnct-3.5sq-6c', typeId: '2pnct', size: '3.5', unit: 'sq', cores: 6, outerDiameter: 17.2, crossSectionArea: circleArea(17.2), allowableCurrent: 27 },
+  { id: '2pnct-3.5sq-7c', typeId: '2pnct', size: '3.5', unit: 'sq', cores: 7, outerDiameter: 18.7, crossSectionArea: circleArea(18.7), allowableCurrent: 25 },
+  // 5.5sq
+  { id: '2pnct-5.5sq-1c', typeId: '2pnct', size: '5.5', unit: 'sq', cores: 1, outerDiameter: 8.4, crossSectionArea: circleArea(8.4), allowableCurrent: 62 },
+  { id: '2pnct-5.5sq-2c', typeId: '2pnct', size: '5.5', unit: 'sq', cores: 2, outerDiameter: 14.4, crossSectionArea: circleArea(14.4), allowableCurrent: 51 },
+  { id: '2pnct-5.5sq-3c', typeId: '2pnct', size: '5.5', unit: 'sq', cores: 3, outerDiameter: 15.2, crossSectionArea: circleArea(15.2), allowableCurrent: 44 },
+  { id: '2pnct-5.5sq-4c', typeId: '2pnct', size: '5.5', unit: 'sq', cores: 4, outerDiameter: 16.8, crossSectionArea: circleArea(16.8), allowableCurrent: 40 },
+  { id: '2pnct-5.5sq-6c', typeId: '2pnct', size: '5.5', unit: 'sq', cores: 6, outerDiameter: 20.7, crossSectionArea: circleArea(20.7), allowableCurrent: 35 },
+  // 8sq
+  { id: '2pnct-8sq-1c', typeId: '2pnct', size: '8', unit: 'sq', cores: 1, outerDiameter: 9.2, crossSectionArea: circleArea(9.2), allowableCurrent: 77 },
+  { id: '2pnct-8sq-2c', typeId: '2pnct', size: '8', unit: 'sq', cores: 2, outerDiameter: 15.8, crossSectionArea: circleArea(15.8), allowableCurrent: 63 },
+  { id: '2pnct-8sq-3c', typeId: '2pnct', size: '8', unit: 'sq', cores: 3, outerDiameter: 16.7, crossSectionArea: circleArea(16.7), allowableCurrent: 54 },
+  { id: '2pnct-8sq-4c', typeId: '2pnct', size: '8', unit: 'sq', cores: 4, outerDiameter: 18.4, crossSectionArea: circleArea(18.4), allowableCurrent: 49 },
+  // 14sq
+  { id: '2pnct-14sq-1c', typeId: '2pnct', size: '14', unit: 'sq', cores: 1, outerDiameter: 10.6, crossSectionArea: circleArea(10.6), allowableCurrent: 105 },
+  { id: '2pnct-14sq-2c', typeId: '2pnct', size: '14', unit: 'sq', cores: 2, outerDiameter: 18.4, crossSectionArea: circleArea(18.4), allowableCurrent: 89 },
+  { id: '2pnct-14sq-3c', typeId: '2pnct', size: '14', unit: 'sq', cores: 3, outerDiameter: 19.7, crossSectionArea: circleArea(19.7), allowableCurrent: 76 },
+  { id: '2pnct-14sq-4c', typeId: '2pnct', size: '14', unit: 'sq', cores: 4, outerDiameter: 21.7, crossSectionArea: circleArea(21.7), allowableCurrent: 69 },
+  // 22sq
+  { id: '2pnct-22sq-1c', typeId: '2pnct', size: '22', unit: 'sq', cores: 1, outerDiameter: 13.4, crossSectionArea: circleArea(13.4), allowableCurrent: 145 },
+  { id: '2pnct-22sq-2c', typeId: '2pnct', size: '22', unit: 'sq', cores: 2, outerDiameter: 24.4, crossSectionArea: circleArea(24.4), allowableCurrent: 120 },
+  { id: '2pnct-22sq-3c', typeId: '2pnct', size: '22', unit: 'sq', cores: 3, outerDiameter: 26.1, crossSectionArea: circleArea(26.1), allowableCurrent: 100 },
+  { id: '2pnct-22sq-4c', typeId: '2pnct', size: '22', unit: 'sq', cores: 4, outerDiameter: 28.8, crossSectionArea: circleArea(28.8), allowableCurrent: 93 },
+  // 38sq
+  { id: '2pnct-38sq-1c', typeId: '2pnct', size: '38', unit: 'sq', cores: 1, outerDiameter: 15.9, crossSectionArea: circleArea(15.9), allowableCurrent: 205 },
+  { id: '2pnct-38sq-2c', typeId: '2pnct', size: '38', unit: 'sq', cores: 2, outerDiameter: 29.2, crossSectionArea: circleArea(29.2), allowableCurrent: 165 },
+  { id: '2pnct-38sq-3c', typeId: '2pnct', size: '38', unit: 'sq', cores: 3, outerDiameter: 31.2, crossSectionArea: circleArea(31.2), allowableCurrent: 140 },
+  { id: '2pnct-38sq-4c', typeId: '2pnct', size: '38', unit: 'sq', cores: 4, outerDiameter: 34.6, crossSectionArea: circleArea(34.6), allowableCurrent: 125 },
+  // 60sq
+  { id: '2pnct-60sq-1c', typeId: '2pnct', size: '60', unit: 'sq', cores: 1, outerDiameter: 19.4, crossSectionArea: circleArea(19.4), allowableCurrent: 280 },
+  { id: '2pnct-60sq-3c', typeId: '2pnct', size: '60', unit: 'sq', cores: 3, outerDiameter: 38.7, crossSectionArea: circleArea(38.7), allowableCurrent: 185 },
+  { id: '2pnct-60sq-4c', typeId: '2pnct', size: '60', unit: 'sq', cores: 4, outerDiameter: 43.1, crossSectionArea: circleArea(43.1), allowableCurrent: 170 },
+  // 100sq
+  { id: '2pnct-100sq-1c', typeId: '2pnct', size: '100', unit: 'sq', cores: 1, outerDiameter: 24.6, crossSectionArea: circleArea(24.6), allowableCurrent: 390 },
+  { id: '2pnct-100sq-3c', typeId: '2pnct', size: '100', unit: 'sq', cores: 3, outerDiameter: 50.0, crossSectionArea: circleArea(50.0), allowableCurrent: 265 },
+  { id: '2pnct-100sq-4c', typeId: '2pnct', size: '100', unit: 'sq', cores: 4, outerDiameter: 55.6, crossSectionArea: circleArea(55.6), allowableCurrent: 240 },
+  // 150sq
+  { id: '2pnct-150sq-1c', typeId: '2pnct', size: '150', unit: 'sq', cores: 1, outerDiameter: 28.5, crossSectionArea: circleArea(28.5), allowableCurrent: 494 },
+  { id: '2pnct-150sq-3c', typeId: '2pnct', size: '150', unit: 'sq', cores: 3, outerDiameter: 58.5, crossSectionArea: circleArea(58.5), allowableCurrent: 338 },
 ]
 
 /**
