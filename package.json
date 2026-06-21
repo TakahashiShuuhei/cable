@@ -10,7 +10,8 @@
     "test": "vitest",
     "test:run": "vitest run",
     "test:coverage": "vitest run --coverage",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "deploy": "npm run build && rm -rf /home/shuhei/git/TakahashiShuuhei.github.io/public/apps/cable && cp -r dist /home/shuhei/git/TakahashiShuuhei.github.io/public/apps/cable"
   },
   "dependencies": {
     "react": "^18.3.1",
