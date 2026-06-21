@@ -157,6 +157,12 @@ function WireList({
 
             {isExpanded && (
               <div className="border-t border-border">
+                {/* VVFの注意書き */}
+                {type.id === 'vvf' && (
+                  <div className="px-4 py-2 bg-warning/10 text-warning text-xs">
+                    平形ケーブルの断面積は、長辺を直径とする円の面積で計算しています
+                  </div>
+                )}
                 <table className="w-full text-sm">
                   <thead className="bg-background">
                     <tr>
