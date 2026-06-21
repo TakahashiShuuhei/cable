@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import { useCalculation } from '../contexts/CalculationContext'
 import { conduitTypes, conduitSizes, getConduitType } from '@infrastructure/data/conduits'
 import {
@@ -12,7 +13,7 @@ import {
   isWebShareSupported,
   copyShareUrlToClipboard,
 } from '@infrastructure/sharing/sharing'
-import { loadHistory, deleteHistoryItem, updateHistoryLabel, type HistoryItem } from '@infrastructure/repositories/storage'
+import { loadHistory, deleteHistoryItem, updateHistoryLabel, toggleHistoryFavorite, type HistoryItem } from '@infrastructure/repositories/storage'
 
 export function MainPanel() {
   const { state, setConduit, addWire, removeWire, updateWireQuantity, saveToHistory, restoreFromShareData } = useCalculation()
@@ -112,6 +113,33 @@ export function MainPanel() {
       setExpandedHistoryId(null)
     }
   }
+
+  // お気に入りアニメーション用
+  const [animatingFavoriteId, setAnimatingFavoriteId] = useState<string | null>(null)
+
+  const handleToggleFavorite = (id: string) => {
+    // アニメーション開始
+    setAnimatingFavoriteId(id)
+
+    toggleHistoryFavorite(id)
+    setHistory(loadHistory())
+
+    // ハイライト表示
+    setHighlightedHistoryId(id)
+
+    // アニメーション終了
+    setTimeout(() => {
+      setAnimatingFavoriteId(null)
+      setHighlightedHistoryId(null)
+    }, 600)
+  }
+
+  // お気に入りを上部に表示するソート済み履歴
+  const sortedHistory = [...history].sort((a, b) => {
+    if (a.favorite && !b.favorite) return -1
+    if (!a.favorite && b.favorite) return 1
+    return 0 // 同じ優先度なら元の順序（timestamp順）を維持
+  })
 
   const wireSpecs = selectedWireType ? getWireSpecsByType(selectedWireType) : []
 
@@ -470,52 +498,79 @@ export function MainPanel() {
 
         {showHistory && (
           <div className="mt-3 space-y-2">
-            {history.length === 0 ? (
+            {sortedHistory.length === 0 ? (
               <p className="text-on-surface-secondary text-sm text-center py-2">
                 保存済みの計算はありません
               </p>
             ) : (
-              history.map((item) => {
-                const isExpanded = expandedHistoryId === item.id
-                const isHighlighted = highlightedHistoryId === item.id
+              <AnimatePresence>
+                {sortedHistory.map((item) => {
+                  const isExpanded = expandedHistoryId === item.id
+                  const isHighlighted = highlightedHistoryId === item.id
 
-                return (
-                  <div
-                    key={item.id}
-                    ref={(el) => {
-                      if (el) historyItemRefs.current.set(item.id, el)
-                    }}
-                    className={`bg-background rounded border transition-all duration-300 ${
-                      isHighlighted
-                        ? 'border-primary ring-2 ring-primary/30'
-                        : 'border-border'
-                    }`}
-                  >
-                    {/* ヘッダー（タップで展開） */}
-                    <button
-                      onClick={() => setExpandedHistoryId(isExpanded ? null : item.id)}
-                      className="w-full p-2 text-left"
+                  return (
+                    <motion.div
+                      key={item.id}
+                      layout="position"
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      transition={{
+                        layout: { type: 'spring', stiffness: 500, damping: 35 },
+                        opacity: { duration: 0.15 },
+                      }}
+                      ref={(el) => {
+                        if (el) historyItemRefs.current.set(item.id, el)
+                      }}
+                      className={`bg-background rounded border transition-colors duration-300 ${
+                        isHighlighted
+                          ? 'border-primary ring-2 ring-primary/30'
+                          : 'border-border'
+                      }`}
                     >
-                      <div className="flex items-center justify-between">
-                        <div>
-                          <div className="text-sm font-medium text-on-surface">
-                            {item.label || `${getConduitType(item.conduitSizeId.split('-')[0])?.name} ${item.conduitSizeId.split('-')[1]}`}
-                            <span className={`ml-2 ${
-                              item.result.warningLevel === 'safe' ? 'text-success' :
-                              item.result.warningLevel === 'warning' ? 'text-warning' : 'text-danger'
-                            }`}>
-                              {item.result.percentage.toFixed(1)}%
-                            </span>
+                    {/* ヘッダー（タップで展開） */}
+                    <div className="flex items-center">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation()
+                          handleToggleFavorite(item.id)
+                        }}
+                        className={`p-2 text-xl transition-all duration-300 ${
+                          item.favorite ? 'text-warning' : 'text-on-surface-secondary/30'
+                        } ${
+                          animatingFavoriteId === item.id
+                            ? 'scale-150 rotate-[360deg]'
+                            : 'scale-100 rotate-0'
+                        }`}
+                        title={item.favorite ? 'お気に入りを解除' : 'お気に入りに追加'}
+                      >
+                        ★
+                      </button>
+                      <button
+                        onClick={() => setExpandedHistoryId(isExpanded ? null : item.id)}
+                        className="flex-1 p-2 pl-0 text-left"
+                      >
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <div className="text-sm font-medium text-on-surface">
+                              {item.label || `${getConduitType(item.conduitSizeId.split('-')[0])?.name} ${item.conduitSizeId.split('-')[1]}`}
+                              <span className={`ml-2 ${
+                                item.result.warningLevel === 'safe' ? 'text-success' :
+                                item.result.warningLevel === 'warning' ? 'text-warning' : 'text-danger'
+                              }`}>
+                                {item.result.percentage.toFixed(1)}%
+                              </span>
+                            </div>
+                            <div className="text-xs text-on-surface-secondary">
+                              {new Date(item.timestamp).toLocaleDateString('ja-JP')}
+                            </div>
                           </div>
-                          <div className="text-xs text-on-surface-secondary">
-                            {new Date(item.timestamp).toLocaleDateString('ja-JP')}
-                          </div>
+                          <span className="text-on-surface-secondary text-sm">
+                            {isExpanded ? '▲' : '▼'}
+                          </span>
                         </div>
-                        <span className="text-on-surface-secondary text-sm">
-                          {isExpanded ? '▲' : '▼'}
-                        </span>
-                      </div>
-                    </button>
+                      </button>
+                    </div>
 
                     {/* 展開時の詳細 */}
                     {isExpanded && (
@@ -556,9 +611,10 @@ export function MainPanel() {
                         </div>
                       </div>
                     )}
-                  </div>
-                )
-              })
+                  </motion.div>
+                  )
+                })}
+              </AnimatePresence>
             )}
           </div>
         )}

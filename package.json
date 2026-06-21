@@ -14,6 +14,7 @@
     "deploy": "npm run build && rm -rf /home/shuhei/git/TakahashiShuuhei.github.io/public/apps/cable && cp -r dist /home/shuhei/git/TakahashiShuuhei.github.io/public/apps/cable"
   },
   "dependencies": {
+    "framer-motion": "^12.40.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

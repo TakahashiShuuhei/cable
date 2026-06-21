@@ -16,6 +16,7 @@ export interface HistoryItem {
     hasMixedSizes: boolean
   }
   label?: string
+  favorite?: boolean
 }
 
 const STORAGE_KEY = 'cable-occupancy-history'
@@ -98,6 +99,18 @@ export function updateHistoryLabel(id: string, label: string): void {
   const index = history.findIndex((item) => item.id === id)
   if (index !== -1) {
     history[index] = { ...history[index], label }
+    saveHistory(history)
+  }
+}
+
+/**
+ * 履歴アイテムのお気に入りを切り替える
+ */
+export function toggleHistoryFavorite(id: string): void {
+  const history = loadHistory()
+  const index = history.findIndex((item) => item.id === id)
+  if (index !== -1) {
+    history[index] = { ...history[index], favorite: !history[index].favorite }
     saveHistory(history)
   }
 }
