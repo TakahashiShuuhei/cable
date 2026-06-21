@@ -37,8 +37,6 @@ export const wireTypes: WireType[] = [
 
 // 断面積計算ヘルパー（外径から）
 const circleArea = (d: number) => Math.PI * Math.pow(d / 2, 2)
-// 断面積計算ヘルパー（平形ケーブル用）
-const rectArea = (w: number, h: number) => w * h
 
 /**
  * 電線仕様マスターデータ
@@ -80,16 +78,16 @@ export const wireSpecs: WireSpec[] = [
   { id: 'hiv-2.0', typeId: 'hiv', size: '2.0', unit: 'mm', outerDiameter: 3.6, crossSectionArea: circleArea(3.6), allowableCurrent: 42 },
 
   // ============================================
-  // VVF（平形ケーブル）
+  // VVF（平形ケーブル）- 長辺を直径とする円の面積で代用
   // ============================================
-  { id: 'vvf-1.6-2c', typeId: 'vvf', size: '1.6', unit: 'mm', cores: 2, dimensions: { width: 6.2, height: 9.4 }, crossSectionArea: rectArea(6.2, 9.4), allowableCurrent: 18 },
-  { id: 'vvf-1.6-3c', typeId: 'vvf', size: '1.6', unit: 'mm', cores: 3, dimensions: { width: 6.2, height: 12.6 }, crossSectionArea: rectArea(6.2, 12.6), allowableCurrent: 15 },
-  { id: 'vvf-1.6-4c', typeId: 'vvf', size: '1.6', unit: 'mm', cores: 4, dimensions: { width: 6.2, height: 15.8 }, crossSectionArea: rectArea(6.2, 15.8), allowableCurrent: 15 },
-  { id: 'vvf-2.0-2c', typeId: 'vvf', size: '2.0', unit: 'mm', cores: 2, dimensions: { width: 6.6, height: 10.2 }, crossSectionArea: rectArea(6.6, 10.2), allowableCurrent: 23 },
-  { id: 'vvf-2.0-3c', typeId: 'vvf', size: '2.0', unit: 'mm', cores: 3, dimensions: { width: 6.6, height: 13.8 }, crossSectionArea: rectArea(6.6, 13.8), allowableCurrent: 20 },
-  { id: 'vvf-2.0-4c', typeId: 'vvf', size: '2.0', unit: 'mm', cores: 4, dimensions: { width: 6.6, height: 17.4 }, crossSectionArea: rectArea(6.6, 17.4), allowableCurrent: 20 },
-  { id: 'vvf-2.6-2c', typeId: 'vvf', size: '2.6', unit: 'mm', cores: 2, dimensions: { width: 7.6, height: 12.2 }, crossSectionArea: rectArea(7.6, 12.2), allowableCurrent: 32 },
-  { id: 'vvf-2.6-3c', typeId: 'vvf', size: '2.6', unit: 'mm', cores: 3, dimensions: { width: 7.6, height: 16.8 }, crossSectionArea: rectArea(7.6, 16.8), allowableCurrent: 27 },
+  { id: 'vvf-1.6-2c', typeId: 'vvf', size: '1.6', unit: 'mm', cores: 2, dimensions: { width: 6.2, height: 9.4 }, crossSectionArea: circleArea(9.4), allowableCurrent: 18 },
+  { id: 'vvf-1.6-3c', typeId: 'vvf', size: '1.6', unit: 'mm', cores: 3, dimensions: { width: 6.2, height: 12.6 }, crossSectionArea: circleArea(12.6), allowableCurrent: 15 },
+  { id: 'vvf-1.6-4c', typeId: 'vvf', size: '1.6', unit: 'mm', cores: 4, dimensions: { width: 6.2, height: 15.8 }, crossSectionArea: circleArea(15.8), allowableCurrent: 15 },
+  { id: 'vvf-2.0-2c', typeId: 'vvf', size: '2.0', unit: 'mm', cores: 2, dimensions: { width: 6.6, height: 10.2 }, crossSectionArea: circleArea(10.2), allowableCurrent: 23 },
+  { id: 'vvf-2.0-3c', typeId: 'vvf', size: '2.0', unit: 'mm', cores: 3, dimensions: { width: 6.6, height: 13.8 }, crossSectionArea: circleArea(13.8), allowableCurrent: 20 },
+  { id: 'vvf-2.0-4c', typeId: 'vvf', size: '2.0', unit: 'mm', cores: 4, dimensions: { width: 6.6, height: 17.4 }, crossSectionArea: circleArea(17.4), allowableCurrent: 20 },
+  { id: 'vvf-2.6-2c', typeId: 'vvf', size: '2.6', unit: 'mm', cores: 2, dimensions: { width: 7.6, height: 12.2 }, crossSectionArea: circleArea(12.2), allowableCurrent: 32 },
+  { id: 'vvf-2.6-3c', typeId: 'vvf', size: '2.6', unit: 'mm', cores: 3, dimensions: { width: 7.6, height: 16.8 }, crossSectionArea: circleArea(16.8), allowableCurrent: 27 },
 
   // ============================================
   // VVR（丸形ケーブル）

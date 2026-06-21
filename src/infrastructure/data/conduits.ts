@@ -24,6 +24,7 @@ export interface ConduitSize {
  */
 export const conduitTypes: ConduitType[] = [
   { id: 'e', name: 'E管', fullName: '薄鋼電線管', material: '鋼' },
+  { id: 'c', name: 'C管', fullName: 'ねじなし電線管', material: '鋼' },
   { id: 'g', name: 'G管', fullName: '厚鋼電線管', material: '鋼' },
   { id: 'pf', name: 'PF管', fullName: '合成樹脂製可とう電線管', material: '合成樹脂' },
   { id: 've', name: 'VE管', fullName: '硬質塩化ビニル電線管', material: '硬質塩化ビニル' },
