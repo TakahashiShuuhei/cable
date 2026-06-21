@@ -1,20 +1,117 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useCalculation } from '../contexts/CalculationContext'
 import { conduitTypes, conduitSizes, getConduitType } from '@infrastructure/data/conduits'
 import {
   wireTypes,
   getWireSpecsByType,
   getWireSpecDisplayName,
+  getWireSpec,
 } from '@infrastructure/data/wires'
+import {
+  shareViaWebShareApi,
+  isWebShareSupported,
+  copyShareUrlToClipboard,
+} from '@infrastructure/sharing/sharing'
+import { loadHistory, deleteHistoryItem, updateHistoryLabel, type HistoryItem } from '@infrastructure/repositories/storage'
 
 export function MainPanel() {
-  const { state, setConduit, addWire, removeWire, updateWireQuantity } = useCalculation()
+  const { state, setConduit, addWire, removeWire, updateWireQuantity, saveToHistory, restoreFromShareData } = useCalculation()
 
   // 電線追加フォームの状態
   const [selectedWireType, setSelectedWireType] = useState<string>('')
   const [selectedSpec, setSelectedSpec] = useState<string>('')
   const [quantity, setQuantity] = useState<number>(1)
   const [isAddingWire, setIsAddingWire] = useState(false)
+
+  // 保存ダイアログ
+  const [showSaveDialog, setShowSaveDialog] = useState(false)
+  const [saveName, setSaveName] = useState('')
+
+  // URLコピーフィードバック
+  const [copied, setCopied] = useState(false)
+
+  // 履歴
+  const [history, setHistory] = useState<HistoryItem[]>([])
+  const [showHistory, setShowHistory] = useState(false)
+  const [expandedHistoryId, setExpandedHistoryId] = useState<string | null>(null)
+  const [highlightedHistoryId, setHighlightedHistoryId] = useState<string | null>(null)
+
+  // refs
+  const historySectionRef = useRef<HTMLDivElement>(null)
+  const historyItemRefs = useRef<Map<string, HTMLDivElement>>(new Map())
+
+  // 履歴をロード
+  useEffect(() => {
+    setHistory(loadHistory())
+  }, [])
+
+  const handleSaveClick = () => {
+    // デフォルト名を生成
+    const conduitName = state.conduitSize
+      ? `${getConduitType(state.conduitSize.type)?.name} ${state.conduitSize.nominalSize}`
+      : ''
+    setSaveName(conduitName)
+    setShowSaveDialog(true)
+  }
+
+  const handleSaveConfirm = () => {
+    saveToHistory()
+    const newHistory = loadHistory()
+    setHistory(newHistory)
+
+    // 最新の履歴にラベルを設定
+    if (newHistory.length > 0 && saveName.trim()) {
+      updateHistoryLabel(newHistory[0].id, saveName.trim())
+      setHistory(loadHistory())
+    }
+
+    setShowSaveDialog(false)
+    setSaveName('')
+    setShowHistory(true)
+
+    // スクロールとハイライト
+    setTimeout(() => {
+      const latestId = loadHistory()[0]?.id
+      if (latestId) {
+        setHighlightedHistoryId(latestId)
+        const element = historyItemRefs.current.get(latestId)
+        element?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+
+        setTimeout(() => setHighlightedHistoryId(null), 2000)
+      }
+    }, 100)
+  }
+
+  const handleCopyUrl = async () => {
+    if (!state.conduitSizeId) return
+    const success = await copyShareUrlToClipboard({
+      conduitSizeId: state.conduitSizeId,
+      wireEntries: state.wires.map((w) => ({
+        wireSpecId: w.wireSpecId,
+        quantity: w.quantity,
+      })),
+    })
+    if (success) {
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    }
+  }
+
+  const handleRestoreHistory = (item: HistoryItem) => {
+    restoreFromShareData({
+      conduitSizeId: item.conduitSizeId,
+      wireEntries: item.wireEntries,
+    })
+    setExpandedHistoryId(null)
+  }
+
+  const handleDeleteHistory = (id: string) => {
+    deleteHistoryItem(id)
+    setHistory(loadHistory())
+    if (expandedHistoryId === id) {
+      setExpandedHistoryId(null)
+    }
+  }
 
   const wireSpecs = selectedWireType ? getWireSpecsByType(selectedWireType) : []
 
@@ -289,6 +386,183 @@ export function MainPanel() {
           </button>
         </div>
       )}
+
+      {/* 保存・共有ボタン */}
+      {state.conduitSizeId && state.wires.length > 0 && (
+        <div className="mt-4 flex gap-2">
+          <button
+            onClick={handleSaveClick}
+            className="flex-1 py-2 rounded border border-primary text-primary hover:bg-primary/10 transition-colors"
+          >
+            保存
+          </button>
+
+          {isWebShareSupported() ? (
+            <button
+              onClick={async () => {
+                await shareViaWebShareApi({
+                  conduitSizeId: state.conduitSizeId!,
+                  wireEntries: state.wires.map((w) => ({
+                    wireSpecId: w.wireSpecId,
+                    quantity: w.quantity,
+                  })),
+                })
+              }}
+              className="flex-1 py-2 rounded border border-primary text-primary hover:bg-primary/10 transition-colors"
+            >
+              共有
+            </button>
+          ) : (
+            <button
+              onClick={handleCopyUrl}
+              className={`flex-1 py-2 rounded border transition-colors ${
+                copied
+                  ? 'border-success text-success bg-success/10'
+                  : 'border-primary text-primary hover:bg-primary/10'
+              }`}
+            >
+              {copied ? 'コピーしました' : '共有URLをコピー'}
+            </button>
+          )}
+        </div>
+      )}
+
+      {/* 保存ダイアログ */}
+      {showSaveDialog && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <div className="bg-surface rounded-lg p-4 w-full max-w-sm">
+            <h3 className="text-lg font-semibold text-on-surface mb-3">保存名を入力</h3>
+            <input
+              type="text"
+              value={saveName}
+              onChange={(e) => setSaveName(e.target.value)}
+              placeholder="例: 現場A 幹線"
+              className="w-full p-3 rounded border border-border bg-background text-on-surface mb-4"
+              autoFocus
+            />
+            <div className="flex gap-2">
+              <button
+                onClick={() => setShowSaveDialog(false)}
+                className="flex-1 py-2 rounded border border-border text-on-surface-secondary hover:bg-background"
+              >
+                キャンセル
+              </button>
+              <button
+                onClick={handleSaveConfirm}
+                className="flex-1 py-2 rounded bg-primary text-white hover:opacity-90"
+              >
+                保存
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 履歴セクション */}
+      <div ref={historySectionRef} className="mt-6 pt-4 border-t border-border">
+        <button
+          onClick={() => setShowHistory(!showHistory)}
+          className="w-full flex items-center justify-between text-on-surface-secondary text-sm"
+        >
+          <span>保存済み ({history.length})</span>
+          <span>{showHistory ? '▲' : '▼'}</span>
+        </button>
+
+        {showHistory && (
+          <div className="mt-3 space-y-2">
+            {history.length === 0 ? (
+              <p className="text-on-surface-secondary text-sm text-center py-2">
+                保存済みの計算はありません
+              </p>
+            ) : (
+              history.map((item) => {
+                const isExpanded = expandedHistoryId === item.id
+                const isHighlighted = highlightedHistoryId === item.id
+
+                return (
+                  <div
+                    key={item.id}
+                    ref={(el) => {
+                      if (el) historyItemRefs.current.set(item.id, el)
+                    }}
+                    className={`bg-background rounded border transition-all duration-300 ${
+                      isHighlighted
+                        ? 'border-primary ring-2 ring-primary/30'
+                        : 'border-border'
+                    }`}
+                  >
+                    {/* ヘッダー（タップで展開） */}
+                    <button
+                      onClick={() => setExpandedHistoryId(isExpanded ? null : item.id)}
+                      className="w-full p-2 text-left"
+                    >
+                      <div className="flex items-center justify-between">
+                        <div>
+                          <div className="text-sm font-medium text-on-surface">
+                            {item.label || `${getConduitType(item.conduitSizeId.split('-')[0])?.name} ${item.conduitSizeId.split('-')[1]}`}
+                            <span className={`ml-2 ${
+                              item.result.warningLevel === 'safe' ? 'text-success' :
+                              item.result.warningLevel === 'warning' ? 'text-warning' : 'text-danger'
+                            }`}>
+                              {item.result.percentage.toFixed(1)}%
+                            </span>
+                          </div>
+                          <div className="text-xs text-on-surface-secondary">
+                            {new Date(item.timestamp).toLocaleDateString('ja-JP')}
+                          </div>
+                        </div>
+                        <span className="text-on-surface-secondary text-sm">
+                          {isExpanded ? '▲' : '▼'}
+                        </span>
+                      </div>
+                    </button>
+
+                    {/* 展開時の詳細 */}
+                    {isExpanded && (
+                      <div className="px-2 pb-2 border-t border-border">
+                        {/* 電線管情報 */}
+                        <div className="py-2 text-sm text-on-surface-secondary">
+                          {getConduitType(item.conduitSizeId.split('-')[0])?.name}{' '}
+                          {item.conduitSizeId.split('-')[1]}
+                        </div>
+
+                        {/* 電線リスト */}
+                        <div className="space-y-1 mb-3">
+                          {item.wireEntries.map((entry, idx) => {
+                            const spec = getWireSpec(entry.wireSpecId)
+                            return (
+                              <div key={idx} className="text-xs text-on-surface-secondary flex justify-between">
+                                <span>{spec ? getWireSpecDisplayName(spec) : entry.wireSpecId}</span>
+                                <span>×{entry.quantity}</span>
+                              </div>
+                            )
+                          })}
+                        </div>
+
+                        {/* アクションボタン */}
+                        <div className="flex gap-2">
+                          <button
+                            onClick={() => handleRestoreHistory(item)}
+                            className="flex-1 py-2 rounded bg-primary text-white text-sm hover:opacity-90"
+                          >
+                            読み込む
+                          </button>
+                          <button
+                            onClick={() => handleDeleteHistory(item.id)}
+                            className="px-3 py-2 rounded border border-danger text-danger text-sm hover:bg-danger/10"
+                          >
+                            削除
+                          </button>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )
+              })
+            )}
+          </div>
+        )}
+      </div>
     </section>
   )
 }

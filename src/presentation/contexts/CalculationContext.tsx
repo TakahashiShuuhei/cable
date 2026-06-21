@@ -1,10 +1,11 @@
-import { createContext, useContext, useState, useCallback, type ReactNode } from 'react'
+import { createContext, useContext, useState, useCallback, useEffect, type ReactNode } from 'react'
 import { Area } from '@domain/models/values/Area'
 import { OccupancyCalculator, type WireEntry } from '@domain/services/OccupancyCalculator'
 import { type OccupancyRate } from '@domain/models/values/OccupancyRate'
 import { getConduitSize, type ConduitSize } from '@infrastructure/data/conduits'
 import { getWireSpec, type WireSpec } from '@infrastructure/data/wires'
 import { addHistoryItem } from '@infrastructure/repositories/storage'
+import { extractShareDataFromUrl, type ShareData } from '@infrastructure/sharing/sharing'
 
 /**
  * 選択された電線
@@ -31,6 +32,7 @@ interface CalculationContextType {
   updateWireQuantity: (id: string, quantity: number) => void
   clearAll: () => void
   saveToHistory: () => void
+  restoreFromShareData: (data: ShareData) => boolean
 }
 
 const CalculationContext = createContext<CalculationContextType | undefined>(undefined)
@@ -153,6 +155,42 @@ export function CalculationProvider({ children }: { children: ReactNode }) {
     })
   }, [state])
 
+  const restoreFromShareData = useCallback((data: ShareData): boolean => {
+    const size = getConduitSize(data.conduitSizeId)
+    if (!size) return false
+
+    const wires: SelectedWire[] = []
+    for (const entry of data.wireEntries) {
+      const spec = getWireSpec(entry.wireSpecId)
+      if (spec) {
+        wires.push({
+          id: crypto.randomUUID(),
+          wireSpecId: entry.wireSpecId,
+          wireSpec: spec,
+          quantity: entry.quantity,
+        })
+      }
+    }
+
+    setState({
+      conduitSizeId: data.conduitSizeId,
+      conduitSize: size,
+      wires,
+      result: calculateResult(size, wires),
+    })
+    return true
+  }, [])
+
+  // URL起動時の自動復元
+  useEffect(() => {
+    const shareData = extractShareDataFromUrl()
+    if (shareData) {
+      restoreFromShareData(shareData)
+      // URLパラメータをクリア（履歴を汚さない）
+      window.history.replaceState({}, '', window.location.pathname)
+    }
+  }, [restoreFromShareData])
+
   return (
     <CalculationContext.Provider
       value={{
@@ -163,6 +201,7 @@ export function CalculationProvider({ children }: { children: ReactNode }) {
         updateWireQuantity,
         clearAll,
         saveToHistory,
+        restoreFromShareData,
       }}
     >
       {children}
