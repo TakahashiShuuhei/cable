@@ -131,6 +131,51 @@ export function HelpPage({ onClose }: HelpPageProps) {
             </div>
           </section>
 
+          {/* 保存済みデータ */}
+          <section>
+            <h2 className="text-lg font-bold text-on-surface mb-3 border-b border-border pb-2">
+              保存済みデータ
+            </h2>
+            <p className="text-on-surface text-sm mb-3">
+              画面下部の「保存済み」エリアから、過去の計算を管理できます。
+            </p>
+            <div className="space-y-3 text-on-surface">
+              <div className="flex gap-3">
+                <div className="flex-shrink-0 w-9 h-9 rounded-full bg-background flex items-center justify-center text-warning text-xl">
+                  ★
+                </div>
+                <div>
+                  <p className="font-medium">お気に入り</p>
+                  <p className="text-sm text-on-surface-secondary">
+                    星マークをタップでお気に入りに登録・解除。お気に入りはリストの上部に表示されます
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <div className="flex-shrink-0 w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center text-xs font-medium">
+                  読込
+                </div>
+                <div>
+                  <p className="font-medium">読み込み</p>
+                  <p className="text-sm text-on-surface-secondary">
+                    項目をタップして展開し、「読み込む」で計算を再開できます
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <div className="flex-shrink-0 w-9 h-9 rounded-full border border-danger text-danger flex items-center justify-center text-xs font-medium">
+                  削除
+                </div>
+                <div>
+                  <p className="font-medium">削除</p>
+                  <p className="text-sm text-on-surface-secondary">
+                    不要なデータは「削除」ボタンで削除できます
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* PWAインストール */}
           <section>
             <h2 className="text-lg font-bold text-on-surface mb-3 border-b border-border pb-2">
