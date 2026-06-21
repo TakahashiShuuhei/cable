@@ -4,9 +4,10 @@ import { useCalculation } from '../contexts/CalculationContext'
 
 interface HeaderProps {
   onHelpClick: () => void
+  onDataListClick: () => void
 }
 
-export function Header({ onHelpClick }: HeaderProps) {
+export function Header({ onHelpClick, onDataListClick }: HeaderProps) {
   const { toggleTheme } = useTheme()
   const { state, clearAll } = useCalculation()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -68,6 +69,15 @@ export function Header({ onHelpClick }: HeaderProps) {
               className="w-full px-4 py-3 text-left text-on-surface hover:bg-background"
             >
               テーマ切替
+            </button>
+            <button
+              onClick={() => {
+                setIsMenuOpen(false)
+                onDataListClick()
+              }}
+              className="w-full px-4 py-3 text-left text-on-surface hover:bg-background"
+            >
+              データ一覧
             </button>
             <button
               onClick={() => {

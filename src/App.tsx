@@ -4,14 +4,25 @@ import { CalculationProvider } from './presentation/contexts/CalculationContext'
 import { Header } from './presentation/components/Header'
 import { MainPanel } from './presentation/components/MainPanel'
 import { HelpPage } from './presentation/components/HelpPage'
+import { DataListPage } from './presentation/components/DataListPage'
+
+type Page = 'main' | 'help' | 'data'
 
 function App() {
-  const [showHelp, setShowHelp] = useState(false)
+  const [currentPage, setCurrentPage] = useState<Page>('main')
 
-  if (showHelp) {
+  if (currentPage === 'help') {
     return (
       <ThemeProvider>
-        <HelpPage onClose={() => setShowHelp(false)} />
+        <HelpPage onClose={() => setCurrentPage('main')} />
+      </ThemeProvider>
+    )
+  }
+
+  if (currentPage === 'data') {
+    return (
+      <ThemeProvider>
+        <DataListPage onClose={() => setCurrentPage('main')} />
       </ThemeProvider>
     )
   }
@@ -20,7 +31,10 @@ function App() {
     <ThemeProvider>
       <CalculationProvider>
         <div className="min-h-screen bg-background text-on-surface">
-          <Header onHelpClick={() => setShowHelp(true)} />
+          <Header
+            onHelpClick={() => setCurrentPage('help')}
+            onDataListClick={() => setCurrentPage('data')}
+          />
           <main className="container mx-auto p-4 max-w-2xl">
             <MainPanel />
           </main>
