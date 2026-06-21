@@ -235,7 +235,7 @@ export function HelpPage({ onClose }: HelpPageProps) {
             <ul className="text-on-surface space-y-2">
               <li className="flex gap-2">
                 <span className="text-on-surface-secondary">•</span>
-                <span>保存した計算結果はこの端末でのみ利用できます</span>
+                <span>保存した計算結果はこの端末でのみ利用できます（ブラウザのデータ削除時に消える場合があります。大切なデータは共有URLをメモ等に保存しておくと安心です）</span>
               </li>
               <li className="flex gap-2">
                 <span className="text-on-surface-secondary">•</span>
