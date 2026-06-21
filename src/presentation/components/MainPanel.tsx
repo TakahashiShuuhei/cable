@@ -156,6 +156,9 @@ export function MainPanel() {
             <div className="flex-1 min-w-0">
               <div className="text-sm font-medium text-on-surface truncate">
                 {getWireSpecDisplayName(wire.wireSpec)}
+                <span className="font-normal text-on-surface-secondary ml-1">
+                  (φ{wire.wireSpec.outerDiameter ?? wire.wireSpec.dimensions?.height}mm)
+                </span>
               </div>
               <div className="text-xs text-on-surface-secondary">
                 {wire.wireSpec.crossSectionArea.toFixed(1)}mm² × {wire.quantity} = {(wire.wireSpec.crossSectionArea * wire.quantity).toFixed(1)}mm²
