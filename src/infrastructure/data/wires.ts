@@ -55,6 +55,16 @@ export const wireSpecs: WireSpec[] = [
   { id: 'iv-38sq', typeId: 'iv', size: '38', unit: 'sq', outerDiameter: 10.6, crossSectionArea: 88.25, allowableCurrent: 162 },
   { id: 'iv-60sq', typeId: 'iv', size: '60', unit: 'sq', outerDiameter: 13.0, crossSectionArea: 132.73, allowableCurrent: 217 },
 
+  // HIV（IVと同じ導体サイズ、外径がやや大きい）
+  { id: 'hiv-1.6', typeId: 'hiv', size: '1.6', unit: 'mm', outerDiameter: 2.8, crossSectionArea: 6.16, allowableCurrent: 19 },
+  { id: 'hiv-2.0', typeId: 'hiv', size: '2.0', unit: 'mm', outerDiameter: 3.2, crossSectionArea: 8.04, allowableCurrent: 24 },
+  { id: 'hiv-2.6', typeId: 'hiv', size: '2.6', unit: 'mm', outerDiameter: 4.0, crossSectionArea: 12.57, allowableCurrent: 33 },
+  { id: 'hiv-3.2', typeId: 'hiv', size: '3.2', unit: 'mm', outerDiameter: 4.8, crossSectionArea: 18.10, allowableCurrent: 43 },
+  { id: 'hiv-2sq', typeId: 'hiv', size: '2', unit: 'sq', outerDiameter: 3.6, crossSectionArea: 10.18, allowableCurrent: 27 },
+  { id: 'hiv-3.5sq', typeId: 'hiv', size: '3.5', unit: 'sq', outerDiameter: 4.2, crossSectionArea: 13.85, allowableCurrent: 37 },
+  { id: 'hiv-5.5sq', typeId: 'hiv', size: '5.5', unit: 'sq', outerDiameter: 5.0, crossSectionArea: 19.63, allowableCurrent: 49 },
+  { id: 'hiv-8sq', typeId: 'hiv', size: '8', unit: 'sq', outerDiameter: 5.8, crossSectionArea: 26.42, allowableCurrent: 61 },
+
   // VVF
   { id: 'vvf-1.6-2c', typeId: 'vvf', size: '1.6', unit: 'mm', cores: 2, equivalentDiameter: 7.6, crossSectionArea: 45.36, allowableCurrent: 18 },
   { id: 'vvf-1.6-3c', typeId: 'vvf', size: '1.6', unit: 'mm', cores: 3, equivalentDiameter: 8.8, crossSectionArea: 60.82, allowableCurrent: 15 },
@@ -62,6 +72,18 @@ export const wireSpecs: WireSpec[] = [
   { id: 'vvf-2.0-3c', typeId: 'vvf', size: '2.0', unit: 'mm', cores: 3, equivalentDiameter: 9.9, crossSectionArea: 76.98, allowableCurrent: 19 },
   { id: 'vvf-2.6-2c', typeId: 'vvf', size: '2.6', unit: 'mm', cores: 2, equivalentDiameter: 10.4, crossSectionArea: 84.95, allowableCurrent: 32 },
   { id: 'vvf-2.6-3c', typeId: 'vvf', size: '2.6', unit: 'mm', cores: 3, equivalentDiameter: 11.9, crossSectionArea: 111.22, allowableCurrent: 27 },
+
+  // VVR（丸形ケーブル）
+  { id: 'vvr-1.6-2c', typeId: 'vvr', size: '1.6', unit: 'mm', cores: 2, outerDiameter: 10.5, crossSectionArea: 86.59, allowableCurrent: 18 },
+  { id: 'vvr-1.6-3c', typeId: 'vvr', size: '1.6', unit: 'mm', cores: 3, outerDiameter: 11.0, crossSectionArea: 95.03, allowableCurrent: 15 },
+  { id: 'vvr-2.0-2c', typeId: 'vvr', size: '2.0', unit: 'mm', cores: 2, outerDiameter: 11.5, crossSectionArea: 103.87, allowableCurrent: 23 },
+  { id: 'vvr-2.0-3c', typeId: 'vvr', size: '2.0', unit: 'mm', cores: 3, outerDiameter: 12.0, crossSectionArea: 113.10, allowableCurrent: 19 },
+  { id: 'vvr-2.6-2c', typeId: 'vvr', size: '2.6', unit: 'mm', cores: 2, outerDiameter: 13.0, crossSectionArea: 132.73, allowableCurrent: 32 },
+  { id: 'vvr-2.6-3c', typeId: 'vvr', size: '2.6', unit: 'mm', cores: 3, outerDiameter: 13.5, crossSectionArea: 143.14, allowableCurrent: 27 },
+  { id: 'vvr-5.5sq-2c', typeId: 'vvr', size: '5.5', unit: 'sq', cores: 2, outerDiameter: 15.5, crossSectionArea: 188.69, allowableCurrent: 42 },
+  { id: 'vvr-5.5sq-3c', typeId: 'vvr', size: '5.5', unit: 'sq', cores: 3, outerDiameter: 16.5, crossSectionArea: 213.82, allowableCurrent: 37 },
+  { id: 'vvr-8sq-2c', typeId: 'vvr', size: '8', unit: 'sq', cores: 2, outerDiameter: 17.0, crossSectionArea: 226.98, allowableCurrent: 53 },
+  { id: 'vvr-8sq-3c', typeId: 'vvr', size: '8', unit: 'sq', cores: 3, outerDiameter: 18.0, crossSectionArea: 254.47, allowableCurrent: 46 },
 
   // CV
   { id: 'cv-2sq-1c', typeId: 'cv', size: '2', unit: 'sq', cores: 1, outerDiameter: 6.3, crossSectionArea: 31.17, allowableCurrent: 35 },
