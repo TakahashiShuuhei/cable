@@ -32,6 +32,7 @@ export const wireTypes: WireType[] = [
   { id: 'vvf', name: 'VVF', fullName: '600V ビニル絶縁ビニルシースケーブル平形', description: '最も一般的な屋内配線用ケーブル' },
   { id: 'vvr', name: 'VVR', fullName: '600V ビニル絶縁ビニルシースケーブル丸形', description: '丸形シースケーブル' },
   { id: 'cv', name: 'CV', fullName: '600V 架橋ポリエチレン絶縁ビニルシースケーブル', description: '電力配線用、耐熱性優' },
+  { id: 'cvd', name: 'CVD/T/Q', fullName: '600V 架橋ポリエチレン絶縁ビニルシースケーブル（より合わせ型）', description: '電力幹線用、大容量' },
   { id: 'kiv', name: 'KIV', fullName: '600V 機器用単心ビニル絶縁電線', description: '配電盤内配線用' },
 ]
 
@@ -166,6 +167,40 @@ export const wireSpecs: WireSpec[] = [
   { id: 'kiv-38sq', typeId: 'kiv', size: '38', unit: 'sq', outerDiameter: 13.0, crossSectionArea: circleArea(13.0), allowableCurrent: 176 },
   { id: 'kiv-60sq', typeId: 'kiv', size: '60', unit: 'sq', outerDiameter: 15.5, crossSectionArea: circleArea(15.5), allowableCurrent: 239 },
   { id: 'kiv-100sq', typeId: 'kiv', size: '100', unit: 'sq', outerDiameter: 19.5, crossSectionArea: circleArea(19.5), allowableCurrent: 339 },
+
+  // ============================================
+  // CVD/CVT/CVQ（600V架橋ポリエチレン絶縁ビニルシースケーブル より合わせ型）
+  // CVD=2心, CVT=3心, CVQ=4心
+  // ============================================
+  // 8sq
+  { id: 'cvd-8sq-3c', typeId: 'cvd', size: '8', unit: 'sq', cores: 3, outerDiameter: 19.0, crossSectionArea: circleArea(19.0), allowableCurrent: 62 },
+  // 14sq
+  { id: 'cvd-14sq-3c', typeId: 'cvd', size: '14', unit: 'sq', cores: 3, outerDiameter: 21.0, crossSectionArea: circleArea(21.0), allowableCurrent: 86 },
+  // 22sq
+  { id: 'cvd-22sq-2c', typeId: 'cvd', size: '22', unit: 'sq', cores: 2, outerDiameter: 22.0, crossSectionArea: circleArea(22.0), allowableCurrent: 120 },
+  { id: 'cvd-22sq-3c', typeId: 'cvd', size: '22', unit: 'sq', cores: 3, outerDiameter: 24.0, crossSectionArea: circleArea(24.0), allowableCurrent: 110 },
+  { id: 'cvd-22sq-4c', typeId: 'cvd', size: '22', unit: 'sq', cores: 4, outerDiameter: 27.0, crossSectionArea: circleArea(27.0), allowableCurrent: 110 },
+  // 38sq
+  { id: 'cvd-38sq-2c', typeId: 'cvd', size: '38', unit: 'sq', cores: 2, outerDiameter: 26.0, crossSectionArea: circleArea(26.0), allowableCurrent: 165 },
+  { id: 'cvd-38sq-3c', typeId: 'cvd', size: '38', unit: 'sq', cores: 3, outerDiameter: 28.0, crossSectionArea: circleArea(28.0), allowableCurrent: 155 },
+  { id: 'cvd-38sq-4c', typeId: 'cvd', size: '38', unit: 'sq', cores: 4, outerDiameter: 31.0, crossSectionArea: circleArea(31.0), allowableCurrent: 155 },
+  // 60sq
+  { id: 'cvd-60sq-2c', typeId: 'cvd', size: '60', unit: 'sq', cores: 2, outerDiameter: 31.0, crossSectionArea: circleArea(31.0), allowableCurrent: 225 },
+  { id: 'cvd-60sq-3c', typeId: 'cvd', size: '60', unit: 'sq', cores: 3, outerDiameter: 33.0, crossSectionArea: circleArea(33.0), allowableCurrent: 210 },
+  { id: 'cvd-60sq-4c', typeId: 'cvd', size: '60', unit: 'sq', cores: 4, outerDiameter: 37.0, crossSectionArea: circleArea(37.0), allowableCurrent: 210 },
+  // 100sq
+  { id: 'cvd-100sq-2c', typeId: 'cvd', size: '100', unit: 'sq', cores: 2, outerDiameter: 38.0, crossSectionArea: circleArea(38.0), allowableCurrent: 310 },
+  { id: 'cvd-100sq-3c', typeId: 'cvd', size: '100', unit: 'sq', cores: 3, outerDiameter: 41.0, crossSectionArea: circleArea(41.0), allowableCurrent: 290 },
+  // 150sq
+  { id: 'cvd-150sq-2c', typeId: 'cvd', size: '150', unit: 'sq', cores: 2, outerDiameter: 44.0, crossSectionArea: circleArea(44.0), allowableCurrent: 400 },
+  { id: 'cvd-150sq-3c', typeId: 'cvd', size: '150', unit: 'sq', cores: 3, outerDiameter: 47.0, crossSectionArea: circleArea(47.0), allowableCurrent: 380 },
+  // 200sq
+  { id: 'cvd-200sq-3c', typeId: 'cvd', size: '200', unit: 'sq', cores: 3, outerDiameter: 55.0, crossSectionArea: circleArea(55.0), allowableCurrent: 465 },
+  // 250sq
+  { id: 'cvd-250sq-2c', typeId: 'cvd', size: '250', unit: 'sq', cores: 2, outerDiameter: 55.0, crossSectionArea: circleArea(55.0), allowableCurrent: 565 },
+  { id: 'cvd-250sq-3c', typeId: 'cvd', size: '250', unit: 'sq', cores: 3, outerDiameter: 60.0, crossSectionArea: circleArea(60.0), allowableCurrent: 535 },
+  // 325sq
+  { id: 'cvd-325sq-3c', typeId: 'cvd', size: '325', unit: 'sq', cores: 3, outerDiameter: 66.0, crossSectionArea: circleArea(66.0), allowableCurrent: 635 },
 ]
 
 /**
@@ -194,7 +229,15 @@ export function getWireSpecsByType(typeId: string): WireSpec[] {
  */
 export function getWireSpecDisplayName(spec: WireSpec): string {
   const type = getWireType(spec.typeId)
-  const typeName = type?.name ?? spec.typeId.toUpperCase()
+  let typeName = type?.name ?? spec.typeId.toUpperCase()
+
+  // CVD/CVT/CVQ は心数に応じて名称を変える
+  if (spec.typeId === 'cvd' && spec.cores) {
+    if (spec.cores === 2) typeName = 'CVD'
+    else if (spec.cores === 3) typeName = 'CVT'
+    else if (spec.cores === 4) typeName = 'CVQ'
+  }
+
   const coreStr = spec.cores ? `-${spec.cores}C` : ''
   const unitStr = spec.unit === 'sq' ? '㎟' : 'mm'
   return `${typeName} ${spec.size}${unitStr}${coreStr}`
