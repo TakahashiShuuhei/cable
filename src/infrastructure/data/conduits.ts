@@ -28,6 +28,7 @@ export const conduitTypes: ConduitType[] = [
   { id: 'g', name: 'G管', fullName: '厚鋼電線管', material: '鋼' },
   { id: 'pf', name: 'PF管', fullName: '合成樹脂製可とう電線管', material: '合成樹脂' },
   { id: 've', name: 'VE管', fullName: '硬質塩化ビニル電線管', material: '硬質塩化ビニル' },
+  { id: 'fep', name: 'FEP', fullName: '波付硬質合成樹脂管', material: '合成樹脂' },
 ]
 
 // 断面積計算ヘルパー（内径から）
@@ -84,6 +85,17 @@ export const conduitSizes: ConduitSize[] = [
   { id: 've-36', type: 've', nominalSize: '36', innerDiameter: 36.0, innerArea: circleArea(36.0) },
   { id: 've-42', type: 've', nominalSize: '42', innerDiameter: 42.0, innerArea: circleArea(42.0) },
   { id: 've-54', type: 've', nominalSize: '54', innerDiameter: 54.0, innerArea: circleArea(54.0) },
+
+  // FEP（波付硬質合成樹脂管）
+  { id: 'fep-30', type: 'fep', nominalSize: '30', innerDiameter: 30.0, innerArea: circleArea(30.0) },
+  { id: 'fep-40', type: 'fep', nominalSize: '40', innerDiameter: 42.0, innerArea: circleArea(42.0) },
+  { id: 'fep-50', type: 'fep', nominalSize: '50', innerDiameter: 50.0, innerArea: circleArea(50.0) },
+  { id: 'fep-65', type: 'fep', nominalSize: '65', innerDiameter: 66.0, innerArea: circleArea(66.0) },
+  { id: 'fep-80', type: 'fep', nominalSize: '80', innerDiameter: 80.0, innerArea: circleArea(80.0) },
+  { id: 'fep-100', type: 'fep', nominalSize: '100', innerDiameter: 100.0, innerArea: circleArea(100.0) },
+  { id: 'fep-125', type: 'fep', nominalSize: '125', innerDiameter: 125.0, innerArea: circleArea(125.0) },
+  { id: 'fep-150', type: 'fep', nominalSize: '150', innerDiameter: 150.0, innerArea: circleArea(150.0) },
+  { id: 'fep-200', type: 'fep', nominalSize: '200', innerDiameter: 200.0, innerArea: circleArea(200.0) },
 ]
 
 /**
