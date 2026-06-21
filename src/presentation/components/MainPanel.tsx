@@ -205,66 +205,68 @@ export function MainPanel() {
       {/* 占有率表示 */}
       <div className="relative mb-4">
         {/* 右上のアクションボタン */}
-        {state.conduitSizeId && state.wires.length > 0 && (
-          <div className="absolute top-0 right-0 flex gap-1">
+        <div className="absolute top-0 right-0 flex gap-1">
+          <button
+            onClick={handleSaveClick}
+            disabled={!state.conduitSizeId || state.wires.length === 0}
+            className="w-9 h-9 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors flex items-center justify-center disabled:opacity-30 disabled:pointer-events-none"
+            title="保存"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5">
+              <path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/>
+              <polyline points="17 21 17 13 7 13 7 21"/>
+              <polyline points="7 3 7 8 15 8"/>
+            </svg>
+          </button>
+
+          {isWebShareSupported() ? (
             <button
-              onClick={handleSaveClick}
-              className="w-9 h-9 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors flex items-center justify-center"
-              title="保存"
+              onClick={async () => {
+                if (!state.conduitSizeId) return
+                await shareViaWebShareApi({
+                  conduitSizeId: state.conduitSizeId,
+                  wireEntries: state.wires.map((w) => ({
+                    wireSpecId: w.wireSpecId,
+                    quantity: w.quantity,
+                  })),
+                })
+              }}
+              disabled={!state.conduitSizeId || state.wires.length === 0}
+              className="w-9 h-9 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors flex items-center justify-center disabled:opacity-30 disabled:pointer-events-none"
+              title="共有"
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5">
-                <path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/>
-                <polyline points="17 21 17 13 7 13 7 21"/>
-                <polyline points="7 3 7 8 15 8"/>
+                <circle cx="18" cy="5" r="3"/>
+                <circle cx="6" cy="12" r="3"/>
+                <circle cx="18" cy="19" r="3"/>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
               </svg>
             </button>
-
-            {isWebShareSupported() ? (
-              <button
-                onClick={async () => {
-                  await shareViaWebShareApi({
-                    conduitSizeId: state.conduitSizeId!,
-                    wireEntries: state.wires.map((w) => ({
-                      wireSpecId: w.wireSpecId,
-                      quantity: w.quantity,
-                    })),
-                  })
-                }}
-                className="w-9 h-9 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors flex items-center justify-center"
-                title="共有"
-              >
+          ) : (
+            <button
+              onClick={handleCopyUrl}
+              disabled={!state.conduitSizeId || state.wires.length === 0}
+              className={`w-9 h-9 rounded-full border transition-colors flex items-center justify-center disabled:opacity-30 disabled:pointer-events-none ${
+                copied
+                  ? 'border-success text-success bg-success/10'
+                  : 'border-primary text-primary hover:bg-primary/10'
+              }`}
+              title={copied ? 'コピーしました' : '共有URLをコピー'}
+            >
+              {copied ? (
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5">
-                  <circle cx="18" cy="5" r="3"/>
-                  <circle cx="6" cy="12" r="3"/>
-                  <circle cx="18" cy="19" r="3"/>
-                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
-                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                  <polyline points="20 6 9 17 4 12"/>
                 </svg>
-              </button>
-            ) : (
-              <button
-                onClick={handleCopyUrl}
-                className={`w-9 h-9 rounded-full border transition-colors flex items-center justify-center ${
-                  copied
-                    ? 'border-success text-success bg-success/10'
-                    : 'border-primary text-primary hover:bg-primary/10'
-                }`}
-                title={copied ? 'コピーしました' : '共有URLをコピー'}
-              >
-                {copied ? (
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5">
-                    <polyline points="20 6 9 17 4 12"/>
-                  </svg>
-                ) : (
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5">
-                    <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/>
-                    <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/>
-                  </svg>
-                )}
-              </button>
-            )}
-          </div>
-        )}
+              ) : (
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5">
+                  <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/>
+                  <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/>
+                </svg>
+              )}
+            </button>
+          )}
+        </div>
 
         <div className="text-center">
           <div className={`text-5xl font-bold ${colorClass}`}>
