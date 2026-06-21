@@ -44,6 +44,16 @@ export const conduitSizes: ConduitSize[] = [
   { id: 'e-51', type: 'e', nominalSize: '51', innerDiameter: 48.0, innerArea: circleArea(48.0) },
   { id: 'e-63', type: 'e', nominalSize: '63', innerDiameter: 60.3, innerArea: circleArea(60.3) },
   { id: 'e-75', type: 'e', nominalSize: '75', innerDiameter: 72.6, innerArea: circleArea(72.6) },
+
+  // C管
+  { id: 'c-19', type: 'c', nominalSize: '19', innerDiameter: 15.9, innerArea: circleArea(15.9) },
+  { id: 'c-25', type: 'c', nominalSize: '25', innerDiameter: 22.2, innerArea: circleArea(22.2) },
+  { id: 'c-31', type: 'c', nominalSize: '31', innerDiameter: 28.6, innerArea: circleArea(28.6) },
+  { id: 'c-39', type: 'c', nominalSize: '39', innerDiameter: 34.9, innerArea: circleArea(34.9) },
+  { id: 'c-51', type: 'c', nominalSize: '51', innerDiameter: 47.6, innerArea: circleArea(47.6) },
+  { id: 'c-63', type: 'c', nominalSize: '63', innerDiameter: 59.5, innerArea: circleArea(59.5) },
+  { id: 'c-75', type: 'c', nominalSize: '75', innerDiameter: 72.2, innerArea: circleArea(72.2) },
+
   // G管
   { id: 'g-16', type: 'g', nominalSize: '16', innerDiameter: 16.4, innerArea: circleArea(16.4) },
   { id: 'g-22', type: 'g', nominalSize: '22', innerDiameter: 21.9, innerArea: circleArea(21.9) },
@@ -51,6 +61,11 @@ export const conduitSizes: ConduitSize[] = [
   { id: 'g-36', type: 'g', nominalSize: '36', innerDiameter: 36.9, innerArea: circleArea(36.9) },
   { id: 'g-42', type: 'g', nominalSize: '42', innerDiameter: 42.8, innerArea: circleArea(42.8) },
   { id: 'g-54', type: 'g', nominalSize: '54', innerDiameter: 54.0, innerArea: circleArea(54.0) },
+  { id: 'g-70', type: 'g', nominalSize: '70', innerDiameter: 69.6, innerArea: circleArea(69.6) },
+  { id: 'g-82', type: 'g', nominalSize: '82', innerDiameter: 82.3, innerArea: circleArea(82.3) },
+  { id: 'g-92', type: 'g', nominalSize: '92', innerDiameter: 93.7, innerArea: circleArea(93.7) },
+  { id: 'g-104', type: 'g', nominalSize: '104', innerDiameter: 106.4, innerArea: circleArea(106.4) },
+
   // PF管
   { id: 'pf-14', type: 'pf', nominalSize: '14', innerDiameter: 14.0, innerArea: circleArea(14.0) },
   { id: 'pf-16', type: 'pf', nominalSize: '16', innerDiameter: 16.0, innerArea: circleArea(16.0) },
@@ -58,6 +73,8 @@ export const conduitSizes: ConduitSize[] = [
   { id: 'pf-28', type: 'pf', nominalSize: '28', innerDiameter: 28.0, innerArea: circleArea(28.0) },
   { id: 'pf-36', type: 'pf', nominalSize: '36', innerDiameter: 36.0, innerArea: circleArea(36.0) },
   { id: 'pf-42', type: 'pf', nominalSize: '42', innerDiameter: 42.0, innerArea: circleArea(42.0) },
+  { id: 'pf-54', type: 'pf', nominalSize: '54', innerDiameter: 54.0, innerArea: circleArea(54.0) },
+
   // VE管
   { id: 've-14', type: 've', nominalSize: '14', innerDiameter: 14.0, innerArea: circleArea(14.0) },
   { id: 've-16', type: 've', nominalSize: '16', innerDiameter: 16.0, innerArea: circleArea(16.0) },
