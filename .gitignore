@@ -29,3 +29,5 @@ coverage
 # PWA
 dev-dist
 tsconfig.tsbuildinfo
+
+docs/logic.js

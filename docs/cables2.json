@@ -1,0 +1,5646 @@
+{
+  "IV": {
+    "category_title": "IV",
+    "captions": [],
+    "tables": [
+      {
+        "cable_type": "600V IV （撚線)",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "0.9",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "2.8",
+                "allowable_current_A": "17"
+              }
+            }
+          },
+          {
+            "size_or_area": "1.25",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "3.0",
+                "allowable_current_A": "19"
+              }
+            }
+          },
+          {
+            "size_or_area": "2",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "3.4",
+                "allowable_current_A": "27"
+              }
+            }
+          },
+          {
+            "size_or_area": "3.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "4.0",
+                "allowable_current_A": "37"
+              }
+            }
+          },
+          {
+            "size_or_area": "5.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "5.0",
+                "allowable_current_A": "49"
+              }
+            }
+          },
+          {
+            "size_or_area": "8",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "6.0",
+                "allowable_current_A": "61"
+              }
+            }
+          },
+          {
+            "size_or_area": "14",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "7.6",
+                "allowable_current_A": "88"
+              }
+            }
+          },
+          {
+            "size_or_area": "22",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "9.2",
+                "allowable_current_A": "115"
+              }
+            }
+          },
+          {
+            "size_or_area": "38",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "11.5",
+                "allowable_current_A": "162"
+              }
+            }
+          },
+          {
+            "size_or_area": "60",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "14.0",
+                "allowable_current_A": "217"
+              }
+            }
+          },
+          {
+            "size_or_area": "100",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "17.0",
+                "allowable_current_A": "298"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "600V IV （単線）",
+        "sub_category": null,
+        "size_or_area_unit": "サイズ（㎜）",
+        "data": [
+          {
+            "size_or_area": "1.2",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "2.8",
+                "allowable_current_A": "19"
+              }
+            }
+          },
+          {
+            "size_or_area": "1.6",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "3.2",
+                "allowable_current_A": "27"
+              }
+            }
+          },
+          {
+            "size_or_area": "2.0",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "3.6",
+                "allowable_current_A": "35"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "600V H-IV（撚線）",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "0.9",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "2.8",
+                "allowable_current_A": "20"
+              }
+            }
+          },
+          {
+            "size_or_area": "1.25",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "3.0",
+                "allowable_current_A": "23"
+              }
+            }
+          },
+          {
+            "size_or_area": "2.0",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "3.4",
+                "allowable_current_A": "33"
+              }
+            }
+          },
+          {
+            "size_or_area": "3.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "4.0",
+                "allowable_current_A": "45"
+              }
+            }
+          },
+          {
+            "size_or_area": "5.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "5.0",
+                "allowable_current_A": "59"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "600V H-IV（単線）",
+        "sub_category": null,
+        "size_or_area_unit": "サイズ（㎜）",
+        "data": [
+          {
+            "size_or_area": "1.0",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "2.6",
+                "allowable_current_A": "20"
+              }
+            }
+          },
+          {
+            "size_or_area": "1.6",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "3.2",
+                "allowable_current_A": "33"
+              }
+            }
+          },
+          {
+            "size_or_area": "2.0",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "3.6",
+                "allowable_current_A": "42"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "VVF": {
+    "category_title": "VVF",
+    "captions": [
+      "上段：標準仕上外径（約mm）",
+      "下段：許容電流（A）　参考値で保証値ではありません。"
+    ],
+    "tables": [
+      {
+        "cable_type": "VVF",
+        "sub_category": null,
+        "size_or_area_unit": "サイズ（㎜）",
+        "data": [
+          {
+            "size_or_area": "1.6",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "6.2x 9.4",
+                "allowable_current_A": "18"
+              },
+              "3": {
+                "outer_diameter_mm": "6.2x12.6",
+                "allowable_current_A": "15"
+              },
+              "4": {
+                "outer_diameter_mm": "6.2x15.8",
+                "allowable_current_A": "15"
+              }
+            }
+          },
+          {
+            "size_or_area": "2.0",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "6.6x10.2",
+                "allowable_current_A": "23"
+              },
+              "3": {
+                "outer_diameter_mm": "6.6x13.8",
+                "allowable_current_A": "20"
+              },
+              "4": {
+                "outer_diameter_mm": "6.6x17.4",
+                "allowable_current_A": "20"
+              }
+            }
+          },
+          {
+            "size_or_area": "2.6",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "7.6x12.2",
+                "allowable_current_A": "32"
+              },
+              "3": {
+                "outer_diameter_mm": "7.6x16.8",
+                "allowable_current_A": "27"
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "公団用VVF",
+        "sub_category": null,
+        "size_or_area_unit": "サイズ（㎜）",
+        "data": [
+          {
+            "size_or_area": "1.6",
+            "cores": {
+              "3": {
+                "outer_diameter_mm": "6.2x12.6",
+                "allowable_current_A": "15"
+              }
+            }
+          },
+          {
+            "size_or_area": "2.0",
+            "cores": {
+              "3": {
+                "outer_diameter_mm": "6.6x13.8",
+                "allowable_current_A": "20"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "アース付VVF",
+        "sub_category": null,
+        "size_or_area_unit": "サイズ（㎜）",
+        "data": [
+          {
+            "size_or_area": "2.6",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "7.6x15.4",
+                "allowable_current_A": "32"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "撚線タイプVVF",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "5.5",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "8.0x13.0",
+                "allowable_current_A": "33"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "VVR",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "5.5",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "13.5",
+                "allowable_current_A": "33"
+              },
+              "3": {
+                "outer_diameter_mm": "14.5",
+                "allowable_current_A": "28"
+              }
+            }
+          },
+          {
+            "size_or_area": "8",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "15.5",
+                "allowable_current_A": "42"
+              },
+              "3": {
+                "outer_diameter_mm": "16.0",
+                "allowable_current_A": "36"
+              }
+            }
+          },
+          {
+            "size_or_area": "14",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "18.0",
+                "allowable_current_A": "59"
+              },
+              "3": {
+                "outer_diameter_mm": "19.0",
+                "allowable_current_A": "50"
+              }
+            }
+          },
+          {
+            "size_or_area": "22",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "21.0",
+                "allowable_current_A": "78"
+              },
+              "3": {
+                "outer_diameter_mm": "23.0",
+                "allowable_current_A": "66"
+              }
+            }
+          },
+          {
+            "size_or_area": "38",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "26.0",
+                "allowable_current_A": "110"
+              },
+              "3": {
+                "outer_diameter_mm": "28.0",
+                "allowable_current_A": "93"
+              }
+            }
+          },
+          {
+            "size_or_area": "60",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "33.0",
+                "allowable_current_A": "120"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "600V CV": {
+    "category_title": "600V CV",
+    "captions": [
+      "上段：標準仕上外径（約mm）",
+      "下段：許容電流（A）　参考値で保証値ではありません。",
+      "※1心の2㎟と3.5㎟はH-CVのみの取扱いです。",
+      "※1心の3.5㎟はH EM-CEのみの取扱いです。"
+    ],
+    "tables": [
+      {
+        "cable_type": "600V CV / H-CV※",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "2",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "6.3※",
+                "allowable_current_A": "31※"
+              },
+              "2": {
+                "outer_diameter_mm": "10.0",
+                "allowable_current_A": "28"
+              },
+              "3": {
+                "outer_diameter_mm": "10.5",
+                "allowable_current_A": "23"
+              },
+              "4": {
+                "outer_diameter_mm": "11.5",
+                "allowable_current_A": "23"
+              }
+            }
+          },
+          {
+            "size_or_area": "3.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "6.9※",
+                "allowable_current_A": "44※"
+              },
+              "2": {
+                "outer_diameter_mm": "11.0",
+                "allowable_current_A": "39"
+              },
+              "3": {
+                "outer_diameter_mm": "12.0",
+                "allowable_current_A": "33"
+              },
+              "4": {
+                "outer_diameter_mm": "13.0",
+                "allowable_current_A": "33"
+              }
+            }
+          },
+          {
+            "size_or_area": "5.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "8.0",
+                "allowable_current_A": "58"
+              },
+              "2": {
+                "outer_diameter_mm": "13.5",
+                "allowable_current_A": "52"
+              },
+              "3": {
+                "outer_diameter_mm": "14.5",
+                "allowable_current_A": "44"
+              },
+              "4": {
+                "outer_diameter_mm": "16.0",
+                "allowable_current_A": "44"
+              }
+            }
+          },
+          {
+            "size_or_area": "8",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "8.6",
+                "allowable_current_A": "72"
+              },
+              "2": {
+                "outer_diameter_mm": "15.0",
+                "allowable_current_A": "65"
+              },
+              "3": {
+                "outer_diameter_mm": "16.0",
+                "allowable_current_A": "54"
+              },
+              "4": {
+                "outer_diameter_mm": "17.5",
+                "allowable_current_A": "54"
+              }
+            }
+          },
+          {
+            "size_or_area": "14",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "9.4",
+                "allowable_current_A": "100"
+              },
+              "2": {
+                "outer_diameter_mm": "16.5",
+                "allowable_current_A": "91"
+              },
+              "3": {
+                "outer_diameter_mm": "17.5",
+                "allowable_current_A": "76"
+              },
+              "4": {
+                "outer_diameter_mm": "19.0",
+                "allowable_current_A": "76"
+              }
+            }
+          },
+          {
+            "size_or_area": "22",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "11.0",
+                "allowable_current_A": "130"
+              },
+              "2": {
+                "outer_diameter_mm": "19.5",
+                "allowable_current_A": "120"
+              },
+              "3": {
+                "outer_diameter_mm": "21",
+                "allowable_current_A": "100"
+              },
+              "4": {
+                "outer_diameter_mm": "23",
+                "allowable_current_A": "100"
+              }
+            }
+          },
+          {
+            "size_or_area": "38",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "13.0",
+                "allowable_current_A": "190"
+              },
+              "2": {
+                "outer_diameter_mm": "24",
+                "allowable_current_A": "170"
+              },
+              "3": {
+                "outer_diameter_mm": "25",
+                "allowable_current_A": "140"
+              },
+              "4": {
+                "outer_diameter_mm": "28",
+                "allowable_current_A": "140"
+              }
+            }
+          },
+          {
+            "size_or_area": "60",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "15.5",
+                "allowable_current_A": "255"
+              },
+              "2": {
+                "outer_diameter_mm": "29",
+                "allowable_current_A": "225"
+              },
+              "3": {
+                "outer_diameter_mm": "31",
+                "allowable_current_A": "190"
+              },
+              "4": {
+                "outer_diameter_mm": "35",
+                "allowable_current_A": "190"
+              }
+            }
+          },
+          {
+            "size_or_area": "100",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "19.0",
+                "allowable_current_A": "355"
+              },
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "EM 600V CE/F",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "2",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": "9.9",
+                "allowable_current_A": "28"
+              },
+              "3": {
+                "outer_diameter_mm": "10.5",
+                "allowable_current_A": "23"
+              },
+              "4": {
+                "outer_diameter_mm": "11.5",
+                "allowable_current_A": "23"
+              }
+            }
+          },
+          {
+            "size_or_area": "3.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "6.9",
+                "allowable_current_A": "44"
+              },
+              "2": {
+                "outer_diameter_mm": "11.5",
+                "allowable_current_A": "39"
+              },
+              "3": {
+                "outer_diameter_mm": "12.0",
+                "allowable_current_A": "33"
+              },
+              "4": {
+                "outer_diameter_mm": "13.0",
+                "allowable_current_A": "33"
+              }
+            }
+          },
+          {
+            "size_or_area": "5.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": "13.5",
+                "allowable_current_A": "52"
+              },
+              "3": {
+                "outer_diameter_mm": "14.0",
+                "allowable_current_A": "44"
+              },
+              "4": {
+                "outer_diameter_mm": "15.5",
+                "allowable_current_A": "44"
+              }
+            }
+          },
+          {
+            "size_or_area": "8",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "8.6",
+                "allowable_current_A": "72"
+              },
+              "2": {
+                "outer_diameter_mm": "14.5",
+                "allowable_current_A": "65"
+              },
+              "3": {
+                "outer_diameter_mm": "15.5",
+                "allowable_current_A": "54"
+              },
+              "4": {
+                "outer_diameter_mm": "17.0",
+                "allowable_current_A": "54"
+              }
+            }
+          },
+          {
+            "size_or_area": "14",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "9.4",
+                "allowable_current_A": "100"
+              },
+              "2": {
+                "outer_diameter_mm": "16.0",
+                "allowable_current_A": "91"
+              },
+              "3": {
+                "outer_diameter_mm": "17.0",
+                "allowable_current_A": "76"
+              },
+              "4": {
+                "outer_diameter_mm": "19.0",
+                "allowable_current_A": "76"
+              }
+            }
+          },
+          {
+            "size_or_area": "22",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "11.0",
+                "allowable_current_A": "130"
+              },
+              "2": {
+                "outer_diameter_mm": "19.0",
+                "allowable_current_A": "120"
+              },
+              "3": {
+                "outer_diameter_mm": "21",
+                "allowable_current_A": "100"
+              },
+              "4": {
+                "outer_diameter_mm": "23",
+                "allowable_current_A": "100"
+              }
+            }
+          },
+          {
+            "size_or_area": "38",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "13.0",
+                "allowable_current_A": "190"
+              },
+              "2": {
+                "outer_diameter_mm": "23",
+                "allowable_current_A": "170"
+              },
+              "3": {
+                "outer_diameter_mm": "25",
+                "allowable_current_A": "140"
+              },
+              "4": {
+                "outer_diameter_mm": "28",
+                "allowable_current_A": "140"
+              }
+            }
+          },
+          {
+            "size_or_area": "60",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "15.5",
+                "allowable_current_A": "255"
+              },
+              "2": {
+                "outer_diameter_mm": "29",
+                "allowable_current_A": "225"
+              },
+              "3": {
+                "outer_diameter_mm": "31",
+                "allowable_current_A": "190"
+              },
+              "4": {
+                "outer_diameter_mm": "34",
+                "allowable_current_A": "190"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "CVD": {
+    "category_title": "CVD",
+    "captions": [
+      "上段：標準仕上外径（約mm）",
+      "下段：許容電流（A）　参考値で保証値ではありません。"
+    ],
+    "tables": [
+      {
+        "cable_type": "600V CVD, CVT, CVQ",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "8",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "19.0",
+                "allowable_current_A": "62"
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "14",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "21",
+                "allowable_current_A": "86"
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "22",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "22",
+                "allowable_current_A": "120"
+              },
+              "3": {
+                "outer_diameter_mm": "24",
+                "allowable_current_A": "110"
+              },
+              "4": {
+                "outer_diameter_mm": "27",
+                "allowable_current_A": "110"
+              }
+            }
+          },
+          {
+            "size_or_area": "38",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "26",
+                "allowable_current_A": "165"
+              },
+              "3": {
+                "outer_diameter_mm": "28",
+                "allowable_current_A": "155"
+              },
+              "4": {
+                "outer_diameter_mm": "31",
+                "allowable_current_A": "155"
+              }
+            }
+          },
+          {
+            "size_or_area": "60",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "31",
+                "allowable_current_A": "225"
+              },
+              "3": {
+                "outer_diameter_mm": "33",
+                "allowable_current_A": "210"
+              },
+              "4": {
+                "outer_diameter_mm": "37",
+                "allowable_current_A": "210"
+              }
+            }
+          },
+          {
+            "size_or_area": "100",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "38",
+                "allowable_current_A": "310"
+              },
+              "3": {
+                "outer_diameter_mm": "41",
+                "allowable_current_A": "290"
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "150",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "44",
+                "allowable_current_A": "400"
+              },
+              "3": {
+                "outer_diameter_mm": "47",
+                "allowable_current_A": "380"
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "200",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "55",
+                "allowable_current_A": "465"
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "250",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "55",
+                "allowable_current_A": "565"
+              },
+              "3": {
+                "outer_diameter_mm": "60",
+                "allowable_current_A": "535"
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "325",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "66",
+                "allowable_current_A": "635"
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "6600V CVT",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "22",
+            "cores": {
+              "3": {
+                "outer_diameter_mm": "40",
+                "allowable_current_A": "120"
+              }
+            }
+          },
+          {
+            "size_or_area": "38",
+            "cores": {
+              "3": {
+                "outer_diameter_mm": "45",
+                "allowable_current_A": "170"
+              }
+            }
+          },
+          {
+            "size_or_area": "60",
+            "cores": {
+              "3": {
+                "outer_diameter_mm": "49",
+                "allowable_current_A": "225"
+              }
+            }
+          },
+          {
+            "size_or_area": "100",
+            "cores": {
+              "3": {
+                "outer_diameter_mm": "56",
+                "allowable_current_A": "310"
+              }
+            }
+          },
+          {
+            "size_or_area": "150",
+            "cores": {
+              "3": {
+                "outer_diameter_mm": "62",
+                "allowable_current_A": "405"
+              }
+            }
+          },
+          {
+            "size_or_area": "200",
+            "cores": {
+              "3": {
+                "outer_diameter_mm": "70",
+                "allowable_current_A": "485"
+              }
+            }
+          },
+          {
+            "size_or_area": "250",
+            "cores": {
+              "3": {
+                "outer_diameter_mm": "75",
+                "allowable_current_A": "560"
+              }
+            }
+          },
+          {
+            "size_or_area": "325",
+            "cores": {
+              "3": {
+                "outer_diameter_mm": "82",
+                "allowable_current_A": "660"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "PV-CQ": {
+    "category_title": "PV-CQ",
+    "captions": [],
+    "tables": [
+      {
+        "cable_type": "1500V PV-CQ",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "2",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "3.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "6.5",
+                "allowable_current_A": "46"
+              },
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "5.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "8",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "14",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": "18.0",
+                "allowable_current_A": "98"
+              },
+              "3": {
+                "outer_diameter_mm": "19.0",
+                "allowable_current_A": "86"
+              },
+              "4": {
+                "outer_diameter_mm": "22",
+                "allowable_current_A": "78"
+              }
+            }
+          },
+          {
+            "size_or_area": "22",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": "22",
+                "allowable_current_A": "130"
+              },
+              "3": {
+                "outer_diameter_mm": "23",
+                "allowable_current_A": "115"
+              },
+              "4": {
+                "outer_diameter_mm": "26",
+                "allowable_current_A": "100"
+              }
+            }
+          },
+          {
+            "size_or_area": "38",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": "25",
+                "allowable_current_A": "185"
+              },
+              "3": {
+                "outer_diameter_mm": "27",
+                "allowable_current_A": "160"
+              },
+              "4": {
+                "outer_diameter_mm": "30",
+                "allowable_current_A": "145"
+              }
+            }
+          },
+          {
+            "size_or_area": "60",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": "30",
+                "allowable_current_A": "230"
+              },
+              "3": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "VCTF": {
+    "category_title": "VCTF",
+    "captions": [],
+    "tables": [
+      {
+        "cable_type": "VCTF",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "0.2",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "3.4",
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "3.8",
+                "allowable_current_A": null
+              },
+              "4": {
+                "outer_diameter_mm": "4.1",
+                "allowable_current_A": null
+              },
+              "5": {
+                "outer_diameter_mm": "4.8",
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": "5.2",
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "8": {
+                "outer_diameter_mm": "5.9",
+                "allowable_current_A": null
+              },
+              "10": {
+                "outer_diameter_mm": "6.5",
+                "allowable_current_A": null
+              },
+              "12": {
+                "outer_diameter_mm": "6.7",
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "0.3",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "5.0",
+                "allowable_current_A": "6"
+              },
+              "3": {
+                "outer_diameter_mm": "5.2",
+                "allowable_current_A": "5"
+              },
+              "4": {
+                "outer_diameter_mm": "5.6",
+                "allowable_current_A": "5"
+              },
+              "5": {
+                "outer_diameter_mm": "6.1",
+                "allowable_current_A": "4"
+              },
+              "6": {
+                "outer_diameter_mm": "6.5",
+                "allowable_current_A": "4"
+              },
+              "7": {
+                "outer_diameter_mm": "6.5",
+                "allowable_current_A": "4"
+              },
+              "8": {
+                "outer_diameter_mm": "7.3",
+                "allowable_current_A": "4"
+              },
+              "10": {
+                "outer_diameter_mm": "8.3",
+                "allowable_current_A": "3"
+              },
+              "12": {
+                "outer_diameter_mm": "8.5",
+                "allowable_current_A": "3"
+              }
+            }
+          },
+          {
+            "size_or_area": "0.5",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "6.2",
+                "allowable_current_A": "9"
+              },
+              "3": {
+                "outer_diameter_mm": "6.5",
+                "allowable_current_A": "7"
+              },
+              "4": {
+                "outer_diameter_mm": "7.1",
+                "allowable_current_A": "7"
+              },
+              "5": {
+                "outer_diameter_mm": "7.7",
+                "allowable_current_A": "6"
+              },
+              "6": {
+                "outer_diameter_mm": "8.3",
+                "allowable_current_A": "6"
+              },
+              "7": {
+                "outer_diameter_mm": "8.3",
+                "allowable_current_A": "6"
+              },
+              "8": {
+                "outer_diameter_mm": "9.2",
+                "allowable_current_A": "5"
+              },
+              "10": {
+                "outer_diameter_mm": "10.7",
+                "allowable_current_A": "5"
+              },
+              "12": {
+                "outer_diameter_mm": "11.0",
+                "allowable_current_A": "5"
+              }
+            }
+          },
+          {
+            "size_or_area": "0.75",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "6.6",
+                "allowable_current_A": "11"
+              },
+              "3": {
+                "outer_diameter_mm": "7.0",
+                "allowable_current_A": "10"
+              },
+              "4": {
+                "outer_diameter_mm": "7.6",
+                "allowable_current_A": "9"
+              },
+              "5": {
+                "outer_diameter_mm": "8.2",
+                "allowable_current_A": "8"
+              },
+              "6": {
+                "outer_diameter_mm": "8.9",
+                "allowable_current_A": "8"
+              },
+              "7": {
+                "outer_diameter_mm": "8.9",
+                "allowable_current_A": "7"
+              },
+              "8": {
+                "outer_diameter_mm": "9.9",
+                "allowable_current_A": "7"
+              },
+              "10": {
+                "outer_diameter_mm": "11.5",
+                "allowable_current_A": "7"
+              },
+              "12": {
+                "outer_diameter_mm": "11.9",
+                "allowable_current_A": "6"
+              }
+            }
+          },
+          {
+            "size_or_area": "1.25",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "7.4",
+                "allowable_current_A": "16"
+              },
+              "3": {
+                "outer_diameter_mm": "7.8",
+                "allowable_current_A": "13"
+              },
+              "4": {
+                "outer_diameter_mm": "8.5",
+                "allowable_current_A": "12"
+              },
+              "5": {
+                "outer_diameter_mm": "9.3",
+                "allowable_current_A": "11"
+              },
+              "6": {
+                "outer_diameter_mm": "10.1",
+                "allowable_current_A": "11"
+              },
+              "7": {
+                "outer_diameter_mm": "10.1",
+                "allowable_current_A": "10"
+              },
+              "8": {
+                "outer_diameter_mm": "11.2",
+                "allowable_current_A": "10"
+              },
+              "10": {
+                "outer_diameter_mm": "13.1",
+                "allowable_current_A": "9"
+              },
+              "12": {
+                "outer_diameter_mm": "13.7",
+                "allowable_current_A": "9"
+              }
+            }
+          },
+          {
+            "size_or_area": "2.0",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "8.0",
+                "allowable_current_A": "20"
+              },
+              "3": {
+                "outer_diameter_mm": "8.5",
+                "allowable_current_A": "17"
+              },
+              "4": {
+                "outer_diameter_mm": "9.2",
+                "allowable_current_A": "16"
+              },
+              "5": {
+                "outer_diameter_mm": "10.1",
+                "allowable_current_A": "14"
+              },
+              "6": {
+                "outer_diameter_mm": "11.0",
+                "allowable_current_A": "14"
+              },
+              "7": {
+                "outer_diameter_mm": "11.0",
+                "allowable_current_A": "13"
+              },
+              "8": {
+                "outer_diameter_mm": "12.2",
+                "allowable_current_A": "12"
+              },
+              "10": {
+                "outer_diameter_mm": "14.5",
+                "allowable_current_A": "12"
+              },
+              "12": {
+                "outer_diameter_mm": "15.0",
+                "allowable_current_A": "11"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": []
+      },
+      {
+        "cable_type": "",
+        "sub_category": "2～12心",
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": []
+      },
+      {
+        "cable_type": "",
+        "sub_category": "16～60心",
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": []
+      }
+    ]
+  },
+  "S-VCTF": {
+    "category_title": "S-VCTF",
+    "captions": [],
+    "tables": [
+      {
+        "cable_type": "S-VCTF",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "0.2",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "3.4",
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "3.8",
+                "allowable_current_A": null
+              },
+              "4": {
+                "outer_diameter_mm": "4.1",
+                "allowable_current_A": null
+              },
+              "5": {
+                "outer_diameter_mm": "4.8",
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": "5.2",
+                "allowable_current_A": null
+              },
+              "8": {
+                "outer_diameter_mm": "5.9",
+                "allowable_current_A": null
+              },
+              "10": {
+                "outer_diameter_mm": "6.5",
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "0.3",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "5.0",
+                "allowable_current_A": "6"
+              },
+              "3": {
+                "outer_diameter_mm": "5.0",
+                "allowable_current_A": "5"
+              },
+              "4": {
+                "outer_diameter_mm": "5.6",
+                "allowable_current_A": "5"
+              },
+              "5": {
+                "outer_diameter_mm": "6.1",
+                "allowable_current_A": "4"
+              },
+              "6": {
+                "outer_diameter_mm": "6.5",
+                "allowable_current_A": "4"
+              },
+              "8": {
+                "outer_diameter_mm": "7.0",
+                "allowable_current_A": "4"
+              },
+              "10": {
+                "outer_diameter_mm": "8.1",
+                "allowable_current_A": "3"
+              }
+            }
+          },
+          {
+            "size_or_area": "0.5",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "6.2",
+                "allowable_current_A": "9"
+              },
+              "3": {
+                "outer_diameter_mm": "6.5",
+                "allowable_current_A": "7"
+              },
+              "4": {
+                "outer_diameter_mm": "7.1",
+                "allowable_current_A": "7"
+              },
+              "5": {
+                "outer_diameter_mm": "7.7",
+                "allowable_current_A": "6"
+              },
+              "6": {
+                "outer_diameter_mm": "8.3",
+                "allowable_current_A": "6"
+              },
+              "8": {
+                "outer_diameter_mm": "8.9",
+                "allowable_current_A": "5"
+              },
+              "10": {
+                "outer_diameter_mm": "10.5",
+                "allowable_current_A": "5"
+              }
+            }
+          },
+          {
+            "size_or_area": "0.75",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "6.6",
+                "allowable_current_A": "11"
+              },
+              "3": {
+                "outer_diameter_mm": "7.0",
+                "allowable_current_A": "10"
+              },
+              "4": {
+                "outer_diameter_mm": "7.6",
+                "allowable_current_A": "9"
+              },
+              "5": {
+                "outer_diameter_mm": "8.2",
+                "allowable_current_A": "8"
+              },
+              "6": {
+                "outer_diameter_mm": "8.9",
+                "allowable_current_A": "8"
+              },
+              "8": {
+                "outer_diameter_mm": "10.3",
+                "allowable_current_A": "7"
+              },
+              "10": {
+                "outer_diameter_mm": "11.8",
+                "allowable_current_A": "7"
+              }
+            }
+          },
+          {
+            "size_or_area": "1.25",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "7.4",
+                "allowable_current_A": "16"
+              },
+              "3": {
+                "outer_diameter_mm": "7.8",
+                "allowable_current_A": "13"
+              },
+              "4": {
+                "outer_diameter_mm": "8.5",
+                "allowable_current_A": "12"
+              },
+              "5": {
+                "outer_diameter_mm": "9.3",
+                "allowable_current_A": "11"
+              },
+              "6": {
+                "outer_diameter_mm": "10.1",
+                "allowable_current_A": "11"
+              },
+              "8": {
+                "outer_diameter_mm": "11.7",
+                "allowable_current_A": "10"
+              },
+              "10": {
+                "outer_diameter_mm": "13.6",
+                "allowable_current_A": "9"
+              }
+            }
+          },
+          {
+            "size_or_area": "2.0",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "8.0",
+                "allowable_current_A": "20"
+              },
+              "3": {
+                "outer_diameter_mm": "8.5",
+                "allowable_current_A": "17"
+              },
+              "4": {
+                "outer_diameter_mm": "9.2",
+                "allowable_current_A": "16"
+              },
+              "5": {
+                "outer_diameter_mm": "10.1",
+                "allowable_current_A": "14"
+              },
+              "6": {
+                "outer_diameter_mm": "11.0",
+                "allowable_current_A": "14"
+              },
+              "8": {
+                "outer_diameter_mm": "12.8",
+                "allowable_current_A": "12"
+              },
+              "10": {
+                "outer_diameter_mm": "14.9",
+                "allowable_current_A": "12"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "0.2",
+            "cores": {
+              "12": {
+                "outer_diameter_mm": "6.7",
+                "allowable_current_A": null
+              },
+              "16": {
+                "outer_diameter_mm": "7.3",
+                "allowable_current_A": null
+              },
+              "20": {
+                "outer_diameter_mm": "8.5",
+                "allowable_current_A": null
+              },
+              "24": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "30": {
+                "outer_diameter_mm": "9.8",
+                "allowable_current_A": null
+              },
+              "40": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "50": {
+                "outer_diameter_mm": "12.6",
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "0.3",
+            "cores": {
+              "12": {
+                "outer_diameter_mm": "8.4",
+                "allowable_current_A": "3"
+              },
+              "16": {
+                "outer_diameter_mm": "9.2",
+                "allowable_current_A": "3"
+              },
+              "20": {
+                "outer_diameter_mm": "10.1",
+                "allowable_current_A": "3"
+              },
+              "24": {
+                "outer_diameter_mm": "11.1",
+                "allowable_current_A": "2"
+              },
+              "30": {
+                "outer_diameter_mm": "11.7",
+                "allowable_current_A": "2"
+              },
+              "40": {
+                "outer_diameter_mm": "13.1",
+                "allowable_current_A": "1"
+              },
+              "50": {
+                "outer_diameter_mm": "14.9",
+                "allowable_current_A": "1"
+              }
+            }
+          },
+          {
+            "size_or_area": "0.5",
+            "cores": {
+              "12": {
+                "outer_diameter_mm": "10.8",
+                "allowable_current_A": "5"
+              },
+              "16": {
+                "outer_diameter_mm": "12.0",
+                "allowable_current_A": "4"
+              },
+              "20": {
+                "outer_diameter_mm": "13.2",
+                "allowable_current_A": "4"
+              },
+              "24": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "30": {
+                "outer_diameter_mm": "15.8",
+                "allowable_current_A": "3"
+              },
+              "40": {
+                "outer_diameter_mm": "17.8",
+                "allowable_current_A": "2"
+              },
+              "50": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "0.75",
+            "cores": {
+              "12": {
+                "outer_diameter_mm": "13.2",
+                "allowable_current_A": "6"
+              },
+              "16": {
+                "outer_diameter_mm": "13.0",
+                "allowable_current_A": "6"
+              },
+              "20": {
+                "outer_diameter_mm": "14.7",
+                "allowable_current_A": "5"
+              },
+              "24": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "30": {
+                "outer_diameter_mm": "17.3",
+                "allowable_current_A": "4"
+              },
+              "40": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "50": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "1.25",
+            "cores": {
+              "12": {
+                "outer_diameter_mm": "15.3",
+                "allowable_current_A": "9"
+              },
+              "16": {
+                "outer_diameter_mm": "15.1",
+                "allowable_current_A": "8"
+              },
+              "20": {
+                "outer_diameter_mm": "17.0",
+                "allowable_current_A": "7"
+              },
+              "24": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "30": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "40": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "50": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "2.0",
+            "cores": {
+              "12": {
+                "outer_diameter_mm": "17.0",
+                "allowable_current_A": "11"
+              },
+              "16": {
+                "outer_diameter_mm": "16.8",
+                "allowable_current_A": "10"
+              },
+              "20": {
+                "outer_diameter_mm": "18.6",
+                "allowable_current_A": "9"
+              },
+              "24": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "30": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "40": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "50": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "S-VCTF",
+        "sub_category": "2～10心",
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "0.2",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "3.4",
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "3.8",
+                "allowable_current_A": null
+              },
+              "4": {
+                "outer_diameter_mm": "4.1",
+                "allowable_current_A": null
+              },
+              "5": {
+                "outer_diameter_mm": "4.8",
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": "5.2",
+                "allowable_current_A": null
+              },
+              "8": {
+                "outer_diameter_mm": "5.9",
+                "allowable_current_A": null
+              },
+              "10": {
+                "outer_diameter_mm": "6.5",
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "0.3",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "5.0",
+                "allowable_current_A": "6"
+              },
+              "3": {
+                "outer_diameter_mm": "5.0",
+                "allowable_current_A": "5"
+              },
+              "4": {
+                "outer_diameter_mm": "5.6",
+                "allowable_current_A": "5"
+              },
+              "5": {
+                "outer_diameter_mm": "6.1",
+                "allowable_current_A": "4"
+              },
+              "6": {
+                "outer_diameter_mm": "6.5",
+                "allowable_current_A": "4"
+              },
+              "8": {
+                "outer_diameter_mm": "7.0",
+                "allowable_current_A": "4"
+              },
+              "10": {
+                "outer_diameter_mm": "8.1",
+                "allowable_current_A": "3"
+              }
+            }
+          },
+          {
+            "size_or_area": "0.5",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "6.2",
+                "allowable_current_A": "9"
+              },
+              "3": {
+                "outer_diameter_mm": "6.5",
+                "allowable_current_A": "7"
+              },
+              "4": {
+                "outer_diameter_mm": "7.1",
+                "allowable_current_A": "7"
+              },
+              "5": {
+                "outer_diameter_mm": "7.7",
+                "allowable_current_A": "6"
+              },
+              "6": {
+                "outer_diameter_mm": "8.3",
+                "allowable_current_A": "6"
+              },
+              "8": {
+                "outer_diameter_mm": "8.9",
+                "allowable_current_A": "5"
+              },
+              "10": {
+                "outer_diameter_mm": "10.5",
+                "allowable_current_A": "5"
+              }
+            }
+          },
+          {
+            "size_or_area": "0.75",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "6.6",
+                "allowable_current_A": "11"
+              },
+              "3": {
+                "outer_diameter_mm": "7.0",
+                "allowable_current_A": "10"
+              },
+              "4": {
+                "outer_diameter_mm": "7.6",
+                "allowable_current_A": "9"
+              },
+              "5": {
+                "outer_diameter_mm": "8.2",
+                "allowable_current_A": "8"
+              },
+              "6": {
+                "outer_diameter_mm": "8.9",
+                "allowable_current_A": "8"
+              },
+              "8": {
+                "outer_diameter_mm": "10.3",
+                "allowable_current_A": "7"
+              },
+              "10": {
+                "outer_diameter_mm": "11.8",
+                "allowable_current_A": "7"
+              }
+            }
+          },
+          {
+            "size_or_area": "1.25",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "7.4",
+                "allowable_current_A": "16"
+              },
+              "3": {
+                "outer_diameter_mm": "7.8",
+                "allowable_current_A": "13"
+              },
+              "4": {
+                "outer_diameter_mm": "8.5",
+                "allowable_current_A": "12"
+              },
+              "5": {
+                "outer_diameter_mm": "9.3",
+                "allowable_current_A": "11"
+              },
+              "6": {
+                "outer_diameter_mm": "10.1",
+                "allowable_current_A": "11"
+              },
+              "8": {
+                "outer_diameter_mm": "11.7",
+                "allowable_current_A": "10"
+              },
+              "10": {
+                "outer_diameter_mm": "13.6",
+                "allowable_current_A": "9"
+              }
+            }
+          },
+          {
+            "size_or_area": "2.0",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "8.0",
+                "allowable_current_A": "20"
+              },
+              "3": {
+                "outer_diameter_mm": "8.5",
+                "allowable_current_A": "17"
+              },
+              "4": {
+                "outer_diameter_mm": "9.2",
+                "allowable_current_A": "16"
+              },
+              "5": {
+                "outer_diameter_mm": "10.1",
+                "allowable_current_A": "14"
+              },
+              "6": {
+                "outer_diameter_mm": "11.0",
+                "allowable_current_A": "14"
+              },
+              "8": {
+                "outer_diameter_mm": "12.8",
+                "allowable_current_A": "12"
+              },
+              "10": {
+                "outer_diameter_mm": "14.9",
+                "allowable_current_A": "12"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "",
+        "sub_category": "12～50心",
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "0.2",
+            "cores": {
+              "12": {
+                "outer_diameter_mm": "6.7",
+                "allowable_current_A": null
+              },
+              "16": {
+                "outer_diameter_mm": "7.3",
+                "allowable_current_A": null
+              },
+              "20": {
+                "outer_diameter_mm": "8.5",
+                "allowable_current_A": null
+              },
+              "24": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "30": {
+                "outer_diameter_mm": "9.8",
+                "allowable_current_A": null
+              },
+              "40": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "50": {
+                "outer_diameter_mm": "12.6",
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "0.3",
+            "cores": {
+              "12": {
+                "outer_diameter_mm": "8.4",
+                "allowable_current_A": "3"
+              },
+              "16": {
+                "outer_diameter_mm": "9.2",
+                "allowable_current_A": "3"
+              },
+              "20": {
+                "outer_diameter_mm": "10.1",
+                "allowable_current_A": "3"
+              },
+              "24": {
+                "outer_diameter_mm": "11.1",
+                "allowable_current_A": "2"
+              },
+              "30": {
+                "outer_diameter_mm": "11.7",
+                "allowable_current_A": "2"
+              },
+              "40": {
+                "outer_diameter_mm": "13.1",
+                "allowable_current_A": "1"
+              },
+              "50": {
+                "outer_diameter_mm": "14.9",
+                "allowable_current_A": "1"
+              }
+            }
+          },
+          {
+            "size_or_area": "0.5",
+            "cores": {
+              "12": {
+                "outer_diameter_mm": "10.8",
+                "allowable_current_A": "5"
+              },
+              "16": {
+                "outer_diameter_mm": "12.0",
+                "allowable_current_A": "4"
+              },
+              "20": {
+                "outer_diameter_mm": "13.2",
+                "allowable_current_A": "4"
+              },
+              "24": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "30": {
+                "outer_diameter_mm": "15.8",
+                "allowable_current_A": "3"
+              },
+              "40": {
+                "outer_diameter_mm": "17.8",
+                "allowable_current_A": "2"
+              },
+              "50": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "0.75",
+            "cores": {
+              "12": {
+                "outer_diameter_mm": "13.2",
+                "allowable_current_A": "6"
+              },
+              "16": {
+                "outer_diameter_mm": "13.0",
+                "allowable_current_A": "6"
+              },
+              "20": {
+                "outer_diameter_mm": "14.7",
+                "allowable_current_A": "5"
+              },
+              "24": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "30": {
+                "outer_diameter_mm": "17.3",
+                "allowable_current_A": "4"
+              },
+              "40": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "50": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "1.25",
+            "cores": {
+              "12": {
+                "outer_diameter_mm": "15.3",
+                "allowable_current_A": "9"
+              },
+              "16": {
+                "outer_diameter_mm": "15.1",
+                "allowable_current_A": "8"
+              },
+              "20": {
+                "outer_diameter_mm": "17.0",
+                "allowable_current_A": "7"
+              },
+              "24": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "30": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "40": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "50": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "2.0",
+            "cores": {
+              "12": {
+                "outer_diameter_mm": "17.0",
+                "allowable_current_A": "11"
+              },
+              "16": {
+                "outer_diameter_mm": "16.8",
+                "allowable_current_A": "10"
+              },
+              "20": {
+                "outer_diameter_mm": "18.6",
+                "allowable_current_A": "9"
+              },
+              "24": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "30": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "40": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "50": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "VCT": {
+    "category_title": "VCT",
+    "captions": [],
+    "tables": [
+      {
+        "cable_type": "VCT",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "0.75",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "8.8",
+                "allowable_current_A": "12"
+              },
+              "3": {
+                "outer_diameter_mm": "9.2",
+                "allowable_current_A": "11"
+              },
+              "4": {
+                "outer_diameter_mm": "9.9",
+                "allowable_current_A": "10"
+              },
+              "5": {
+                "outer_diameter_mm": "10.9",
+                "allowable_current_A": "9"
+              },
+              "6": {
+                "outer_diameter_mm": "11.7",
+                "allowable_current_A": "8"
+              },
+              "7": {
+                "outer_diameter_mm": "11.7",
+                "allowable_current_A": "8"
+              }
+            }
+          },
+          {
+            "size_or_area": "1.25",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "9.6",
+                "allowable_current_A": "17"
+              },
+              "3": {
+                "outer_diameter_mm": "10.1",
+                "allowable_current_A": "15"
+              },
+              "4": {
+                "outer_diameter_mm": "11.1",
+                "allowable_current_A": "13"
+              },
+              "5": {
+                "outer_diameter_mm": "12.2",
+                "allowable_current_A": "13"
+              },
+              "6": {
+                "outer_diameter_mm": "13.1",
+                "allowable_current_A": "11"
+              },
+              "7": {
+                "outer_diameter_mm": "13.1",
+                "allowable_current_A": "11"
+              }
+            }
+          },
+          {
+            "size_or_area": "2.0",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "10.4",
+                "allowable_current_A": "22"
+              },
+              "3": {
+                "outer_diameter_mm": "10.9",
+                "allowable_current_A": "19"
+              },
+              "4": {
+                "outer_diameter_mm": "11.8",
+                "allowable_current_A": "17"
+              },
+              "5": {
+                "outer_diameter_mm": "13.0",
+                "allowable_current_A": "17"
+              },
+              "6": {
+                "outer_diameter_mm": "14.2",
+                "allowable_current_A": "15"
+              },
+              "7": {
+                "outer_diameter_mm": "14.2",
+                "allowable_current_A": "14"
+              }
+            }
+          },
+          {
+            "size_or_area": "3.5",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "11.8",
+                "allowable_current_A": "32"
+              },
+              "3": {
+                "outer_diameter_mm": "12.6",
+                "allowable_current_A": "27"
+              },
+              "4": {
+                "outer_diameter_mm": "13.9",
+                "allowable_current_A": "25"
+              },
+              "5": {
+                "outer_diameter_mm": "15.1",
+                "allowable_current_A": "25"
+              },
+              "6": {
+                "outer_diameter_mm": "16.5",
+                "allowable_current_A": "21"
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "5.5",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "14.2",
+                "allowable_current_A": "41"
+              },
+              "3": {
+                "outer_diameter_mm": "15.0",
+                "allowable_current_A": "35"
+              },
+              "4": {
+                "outer_diameter_mm": "16.5",
+                "allowable_current_A": "32"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "8.0",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "16.4",
+                "allowable_current_A": "51"
+              },
+              "3": {
+                "outer_diameter_mm": "17.5",
+                "allowable_current_A": "43"
+              },
+              "4": {
+                "outer_diameter_mm": "19.3",
+                "allowable_current_A": "39"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "14",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "20.0",
+                "allowable_current_A": "72"
+              },
+              "3": {
+                "outer_diameter_mm": "21.4",
+                "allowable_current_A": "62"
+              },
+              "4": {
+                "outer_diameter_mm": "23.6",
+                "allowable_current_A": "56"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "22",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "25.8",
+                "allowable_current_A": "97"
+              },
+              "3": {
+                "outer_diameter_mm": "27.6",
+                "allowable_current_A": "83"
+              },
+              "4": {
+                "outer_diameter_mm": "30.4",
+                "allowable_current_A": "75"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "38",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "31.4",
+                "allowable_current_A": "130"
+              },
+              "3": {
+                "outer_diameter_mm": "33.6",
+                "allowable_current_A": "110"
+              },
+              "4": {
+                "outer_diameter_mm": "37.3",
+                "allowable_current_A": "100"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "60",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "39.8",
+                "allowable_current_A": "150"
+              },
+              "4": {
+                "outer_diameter_mm": "44.1",
+                "allowable_current_A": "135"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "100",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "49.6",
+                "allowable_current_A": "215"
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": []
+      },
+      {
+        "cable_type": "VCT",
+        "sub_category": "2～7心",
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "0.75",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "8.8",
+                "allowable_current_A": "12"
+              },
+              "3": {
+                "outer_diameter_mm": "9.2",
+                "allowable_current_A": "11"
+              },
+              "4": {
+                "outer_diameter_mm": "9.9",
+                "allowable_current_A": "10"
+              },
+              "5": {
+                "outer_diameter_mm": "10.9",
+                "allowable_current_A": "9"
+              },
+              "6": {
+                "outer_diameter_mm": "11.7",
+                "allowable_current_A": "8"
+              },
+              "7": {
+                "outer_diameter_mm": "11.7",
+                "allowable_current_A": "8"
+              }
+            }
+          },
+          {
+            "size_or_area": "1.25",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "9.6",
+                "allowable_current_A": "17"
+              },
+              "3": {
+                "outer_diameter_mm": "10.1",
+                "allowable_current_A": "15"
+              },
+              "4": {
+                "outer_diameter_mm": "11.1",
+                "allowable_current_A": "13"
+              },
+              "5": {
+                "outer_diameter_mm": "12.2",
+                "allowable_current_A": "13"
+              },
+              "6": {
+                "outer_diameter_mm": "13.1",
+                "allowable_current_A": "11"
+              },
+              "7": {
+                "outer_diameter_mm": "13.1",
+                "allowable_current_A": "11"
+              }
+            }
+          },
+          {
+            "size_or_area": "2.0",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "10.4",
+                "allowable_current_A": "22"
+              },
+              "3": {
+                "outer_diameter_mm": "10.9",
+                "allowable_current_A": "19"
+              },
+              "4": {
+                "outer_diameter_mm": "11.8",
+                "allowable_current_A": "17"
+              },
+              "5": {
+                "outer_diameter_mm": "13.0",
+                "allowable_current_A": "17"
+              },
+              "6": {
+                "outer_diameter_mm": "14.2",
+                "allowable_current_A": "15"
+              },
+              "7": {
+                "outer_diameter_mm": "14.2",
+                "allowable_current_A": "14"
+              }
+            }
+          },
+          {
+            "size_or_area": "3.5",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "11.8",
+                "allowable_current_A": "32"
+              },
+              "3": {
+                "outer_diameter_mm": "12.6",
+                "allowable_current_A": "27"
+              },
+              "4": {
+                "outer_diameter_mm": "13.9",
+                "allowable_current_A": "25"
+              },
+              "5": {
+                "outer_diameter_mm": "15.1",
+                "allowable_current_A": "25"
+              },
+              "6": {
+                "outer_diameter_mm": "16.5",
+                "allowable_current_A": "21"
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "5.5",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "14.2",
+                "allowable_current_A": "41"
+              },
+              "3": {
+                "outer_diameter_mm": "15.0",
+                "allowable_current_A": "35"
+              },
+              "4": {
+                "outer_diameter_mm": "16.5",
+                "allowable_current_A": "32"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "8.0",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "16.4",
+                "allowable_current_A": "51"
+              },
+              "3": {
+                "outer_diameter_mm": "17.5",
+                "allowable_current_A": "43"
+              },
+              "4": {
+                "outer_diameter_mm": "19.3",
+                "allowable_current_A": "39"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "14",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "20.0",
+                "allowable_current_A": "72"
+              },
+              "3": {
+                "outer_diameter_mm": "21.4",
+                "allowable_current_A": "62"
+              },
+              "4": {
+                "outer_diameter_mm": "23.6",
+                "allowable_current_A": "56"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "22",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "25.8",
+                "allowable_current_A": "97"
+              },
+              "3": {
+                "outer_diameter_mm": "27.6",
+                "allowable_current_A": "83"
+              },
+              "4": {
+                "outer_diameter_mm": "30.4",
+                "allowable_current_A": "75"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "38",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "31.4",
+                "allowable_current_A": "130"
+              },
+              "3": {
+                "outer_diameter_mm": "33.6",
+                "allowable_current_A": "110"
+              },
+              "4": {
+                "outer_diameter_mm": "37.3",
+                "allowable_current_A": "100"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "60",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "39.8",
+                "allowable_current_A": "150"
+              },
+              "4": {
+                "outer_diameter_mm": "44.1",
+                "allowable_current_A": "135"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "100",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "49.6",
+                "allowable_current_A": "215"
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "",
+        "sub_category": "8～20心",
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": []
+      }
+    ]
+  },
+  "S-VCT": {
+    "category_title": "S-VCT",
+    "captions": [],
+    "tables": [
+      {
+        "cable_type": "S-VCT",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "0.75",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "8.8",
+                "allowable_current_A": "12"
+              },
+              "3": {
+                "outer_diameter_mm": "9.2",
+                "allowable_current_A": "11"
+              },
+              "4": {
+                "outer_diameter_mm": "9.9",
+                "allowable_current_A": "10"
+              },
+              "5": {
+                "outer_diameter_mm": "10.9",
+                "allowable_current_A": "9"
+              },
+              "6": {
+                "outer_diameter_mm": "11.7",
+                "allowable_current_A": "8"
+              },
+              "7": {
+                "outer_diameter_mm": "12.7",
+                "allowable_current_A": "8"
+              }
+            }
+          },
+          {
+            "size_or_area": "1.25",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "9.6",
+                "allowable_current_A": "17"
+              },
+              "3": {
+                "outer_diameter_mm": "10.1",
+                "allowable_current_A": "15"
+              },
+              "4": {
+                "outer_diameter_mm": "11.1",
+                "allowable_current_A": "13"
+              },
+              "5": {
+                "outer_diameter_mm": "12.2",
+                "allowable_current_A": "13"
+              },
+              "6": {
+                "outer_diameter_mm": "13.1",
+                "allowable_current_A": "11"
+              },
+              "7": {
+                "outer_diameter_mm": "14.2",
+                "allowable_current_A": "11"
+              }
+            }
+          },
+          {
+            "size_or_area": "2.0",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "10.4",
+                "allowable_current_A": "22"
+              },
+              "3": {
+                "outer_diameter_mm": "10.9",
+                "allowable_current_A": "19"
+              },
+              "4": {
+                "outer_diameter_mm": "11.8",
+                "allowable_current_A": "17"
+              },
+              "5": {
+                "outer_diameter_mm": "13.0",
+                "allowable_current_A": "17"
+              },
+              "6": {
+                "outer_diameter_mm": "14.2",
+                "allowable_current_A": "15"
+              },
+              "7": {
+                "outer_diameter_mm": "15.2",
+                "allowable_current_A": "14"
+              }
+            }
+          },
+          {
+            "size_or_area": "3.5",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "11.8",
+                "allowable_current_A": "32"
+              },
+              "3": {
+                "outer_diameter_mm": "12.6",
+                "allowable_current_A": "27"
+              },
+              "4": {
+                "outer_diameter_mm": "13.9",
+                "allowable_current_A": "25"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "5.5",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "14.2",
+                "allowable_current_A": "41"
+              },
+              "3": {
+                "outer_diameter_mm": "15.0",
+                "allowable_current_A": "35"
+              },
+              "4": {
+                "outer_diameter_mm": "16.5",
+                "allowable_current_A": "32"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "8.0",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "16.4",
+                "allowable_current_A": "51"
+              },
+              "3": {
+                "outer_diameter_mm": "17.5",
+                "allowable_current_A": "43"
+              },
+              "4": {
+                "outer_diameter_mm": "19.3",
+                "allowable_current_A": "39"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "14",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "20.0",
+                "allowable_current_A": "72"
+              },
+              "3": {
+                "outer_diameter_mm": "21.4",
+                "allowable_current_A": "62"
+              },
+              "4": {
+                "outer_diameter_mm": "23.6",
+                "allowable_current_A": "56"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "22",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "25.8",
+                "allowable_current_A": "97"
+              },
+              "3": {
+                "outer_diameter_mm": "27.6",
+                "allowable_current_A": "83"
+              },
+              "4": {
+                "outer_diameter_mm": "30.4",
+                "allowable_current_A": "75"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "38",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "33.6",
+                "allowable_current_A": "110"
+              },
+              "4": {
+                "outer_diameter_mm": "37.3",
+                "allowable_current_A": "100"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "60",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "39.8",
+                "allowable_current_A": "150"
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": []
+      },
+      {
+        "cable_type": "S-VCT",
+        "sub_category": "2～7心",
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "0.75",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "8.8",
+                "allowable_current_A": "12"
+              },
+              "3": {
+                "outer_diameter_mm": "9.2",
+                "allowable_current_A": "11"
+              },
+              "4": {
+                "outer_diameter_mm": "9.9",
+                "allowable_current_A": "10"
+              },
+              "5": {
+                "outer_diameter_mm": "10.9",
+                "allowable_current_A": "9"
+              },
+              "6": {
+                "outer_diameter_mm": "11.7",
+                "allowable_current_A": "8"
+              },
+              "7": {
+                "outer_diameter_mm": "12.7",
+                "allowable_current_A": "8"
+              }
+            }
+          },
+          {
+            "size_or_area": "1.25",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "9.6",
+                "allowable_current_A": "17"
+              },
+              "3": {
+                "outer_diameter_mm": "10.1",
+                "allowable_current_A": "15"
+              },
+              "4": {
+                "outer_diameter_mm": "11.1",
+                "allowable_current_A": "13"
+              },
+              "5": {
+                "outer_diameter_mm": "12.2",
+                "allowable_current_A": "13"
+              },
+              "6": {
+                "outer_diameter_mm": "13.1",
+                "allowable_current_A": "11"
+              },
+              "7": {
+                "outer_diameter_mm": "14.2",
+                "allowable_current_A": "11"
+              }
+            }
+          },
+          {
+            "size_or_area": "2.0",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "10.4",
+                "allowable_current_A": "22"
+              },
+              "3": {
+                "outer_diameter_mm": "10.9",
+                "allowable_current_A": "19"
+              },
+              "4": {
+                "outer_diameter_mm": "11.8",
+                "allowable_current_A": "17"
+              },
+              "5": {
+                "outer_diameter_mm": "13.0",
+                "allowable_current_A": "17"
+              },
+              "6": {
+                "outer_diameter_mm": "14.2",
+                "allowable_current_A": "15"
+              },
+              "7": {
+                "outer_diameter_mm": "15.2",
+                "allowable_current_A": "14"
+              }
+            }
+          },
+          {
+            "size_or_area": "3.5",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "11.8",
+                "allowable_current_A": "32"
+              },
+              "3": {
+                "outer_diameter_mm": "12.6",
+                "allowable_current_A": "27"
+              },
+              "4": {
+                "outer_diameter_mm": "13.9",
+                "allowable_current_A": "25"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "5.5",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "14.2",
+                "allowable_current_A": "41"
+              },
+              "3": {
+                "outer_diameter_mm": "15.0",
+                "allowable_current_A": "35"
+              },
+              "4": {
+                "outer_diameter_mm": "16.5",
+                "allowable_current_A": "32"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "8.0",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "16.4",
+                "allowable_current_A": "51"
+              },
+              "3": {
+                "outer_diameter_mm": "17.5",
+                "allowable_current_A": "43"
+              },
+              "4": {
+                "outer_diameter_mm": "19.3",
+                "allowable_current_A": "39"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "14",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "20.0",
+                "allowable_current_A": "72"
+              },
+              "3": {
+                "outer_diameter_mm": "21.4",
+                "allowable_current_A": "62"
+              },
+              "4": {
+                "outer_diameter_mm": "23.6",
+                "allowable_current_A": "56"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "22",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "25.8",
+                "allowable_current_A": "97"
+              },
+              "3": {
+                "outer_diameter_mm": "27.6",
+                "allowable_current_A": "83"
+              },
+              "4": {
+                "outer_diameter_mm": "30.4",
+                "allowable_current_A": "75"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "38",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "33.6",
+                "allowable_current_A": "110"
+              },
+              "4": {
+                "outer_diameter_mm": "37.3",
+                "allowable_current_A": "100"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "60",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "39.8",
+                "allowable_current_A": "150"
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "",
+        "sub_category": "8～20心",
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": []
+      }
+    ]
+  },
+  "2PNCT": {
+    "category_title": "2PNCT",
+    "captions": [],
+    "tables": [
+      {
+        "cable_type": "2PNCT",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "0.75",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": "9.0",
+                "allowable_current_A": "15"
+              },
+              "3": {
+                "outer_diameter_mm": "9.4",
+                "allowable_current_A": "13"
+              },
+              "4": {
+                "outer_diameter_mm": "10.4",
+                "allowable_current_A": "12"
+              },
+              "5": {
+                "outer_diameter_mm": "11.2",
+                "allowable_current_A": "11"
+              },
+              "6": {
+                "outer_diameter_mm": "12.5",
+                "allowable_current_A": "10"
+              },
+              "7": {
+                "outer_diameter_mm": "13.4",
+                "allowable_current_A": "10"
+              }
+            }
+          },
+          {
+            "size_or_area": "1.25",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": "9.8",
+                "allowable_current_A": "21"
+              },
+              "3": {
+                "outer_diameter_mm": "10.5",
+                "allowable_current_A": "18"
+              },
+              "4": {
+                "outer_diameter_mm": "11.3",
+                "allowable_current_A": "16"
+              },
+              "5": {
+                "outer_diameter_mm": "12.4",
+                "allowable_current_A": "15"
+              },
+              "6": {
+                "outer_diameter_mm": "13.7",
+                "allowable_current_A": "14"
+              },
+              "7": {
+                "outer_diameter_mm": "14.9",
+                "allowable_current_A": "14"
+              }
+            }
+          },
+          {
+            "size_or_area": "2.0",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": "10.6",
+                "allowable_current_A": "27"
+              },
+              "3": {
+                "outer_diameter_mm": "11.1",
+                "allowable_current_A": "23"
+              },
+              "4": {
+                "outer_diameter_mm": "12.2",
+                "allowable_current_A": "21"
+              },
+              "5": {
+                "outer_diameter_mm": "13.3",
+                "allowable_current_A": "19"
+              },
+              "6": {
+                "outer_diameter_mm": "14.9",
+                "allowable_current_A": "18"
+              },
+              "7": {
+                "outer_diameter_mm": "16.2",
+                "allowable_current_A": "18"
+              }
+            }
+          },
+          {
+            "size_or_area": "3.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": "12.2",
+                "allowable_current_A": "39"
+              },
+              "3": {
+                "outer_diameter_mm": "12.9",
+                "allowable_current_A": "33"
+              },
+              "4": {
+                "outer_diameter_mm": "14.1",
+                "allowable_current_A": "30"
+              },
+              "5": {
+                "outer_diameter_mm": "15.5",
+                "allowable_current_A": "28"
+              },
+              "6": {
+                "outer_diameter_mm": "17.2",
+                "allowable_current_A": "27"
+              },
+              "7": {
+                "outer_diameter_mm": "18.7",
+                "allowable_current_A": "25"
+              }
+            }
+          },
+          {
+            "size_or_area": "5.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "8.4",
+                "allowable_current_A": "62"
+              },
+              "2": {
+                "outer_diameter_mm": "14.4",
+                "allowable_current_A": "51"
+              },
+              "3": {
+                "outer_diameter_mm": "15.2",
+                "allowable_current_A": "44"
+              },
+              "4": {
+                "outer_diameter_mm": "16.8",
+                "allowable_current_A": "40"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": "20.7",
+                "allowable_current_A": "35"
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "8.0",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "9.2",
+                "allowable_current_A": "77"
+              },
+              "2": {
+                "outer_diameter_mm": "15.8",
+                "allowable_current_A": "63"
+              },
+              "3": {
+                "outer_diameter_mm": "16.7",
+                "allowable_current_A": "54"
+              },
+              "4": {
+                "outer_diameter_mm": "18.4",
+                "allowable_current_A": "49"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "14",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "10.6",
+                "allowable_current_A": "105"
+              },
+              "2": {
+                "outer_diameter_mm": "18.4",
+                "allowable_current_A": "89"
+              },
+              "3": {
+                "outer_diameter_mm": "19.7",
+                "allowable_current_A": "76"
+              },
+              "4": {
+                "outer_diameter_mm": "21.7",
+                "allowable_current_A": "69"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "22",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "13.4",
+                "allowable_current_A": "145"
+              },
+              "2": {
+                "outer_diameter_mm": "24.4",
+                "allowable_current_A": "120"
+              },
+              "3": {
+                "outer_diameter_mm": "26.1",
+                "allowable_current_A": "100"
+              },
+              "4": {
+                "outer_diameter_mm": "28.8",
+                "allowable_current_A": "93"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "38",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "15.9",
+                "allowable_current_A": "205"
+              },
+              "2": {
+                "outer_diameter_mm": "29.2",
+                "allowable_current_A": "165"
+              },
+              "3": {
+                "outer_diameter_mm": "31.2",
+                "allowable_current_A": "140"
+              },
+              "4": {
+                "outer_diameter_mm": "34.6",
+                "allowable_current_A": "125"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "60",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "19.4",
+                "allowable_current_A": "280"
+              },
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "38.7",
+                "allowable_current_A": "185"
+              },
+              "4": {
+                "outer_diameter_mm": "43.1",
+                "allowable_current_A": "170"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "100",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "24.6",
+                "allowable_current_A": "390"
+              },
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "50.0",
+                "allowable_current_A": "265"
+              },
+              "4": {
+                "outer_diameter_mm": "55.6",
+                "allowable_current_A": "240"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "150",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "28.5",
+                "allowable_current_A": "494"
+              },
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "58.5",
+                "allowable_current_A": "338"
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": []
+      },
+      {
+        "cable_type": "2PNCT",
+        "sub_category": "1～7心",
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "0.75",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": "9.0",
+                "allowable_current_A": "15"
+              },
+              "3": {
+                "outer_diameter_mm": "9.4",
+                "allowable_current_A": "13"
+              },
+              "4": {
+                "outer_diameter_mm": "10.4",
+                "allowable_current_A": "12"
+              },
+              "5": {
+                "outer_diameter_mm": "11.2",
+                "allowable_current_A": "11"
+              },
+              "6": {
+                "outer_diameter_mm": "12.5",
+                "allowable_current_A": "10"
+              },
+              "7": {
+                "outer_diameter_mm": "13.4",
+                "allowable_current_A": "10"
+              }
+            }
+          },
+          {
+            "size_or_area": "1.25",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": "9.8",
+                "allowable_current_A": "21"
+              },
+              "3": {
+                "outer_diameter_mm": "10.5",
+                "allowable_current_A": "18"
+              },
+              "4": {
+                "outer_diameter_mm": "11.3",
+                "allowable_current_A": "16"
+              },
+              "5": {
+                "outer_diameter_mm": "12.4",
+                "allowable_current_A": "15"
+              },
+              "6": {
+                "outer_diameter_mm": "13.7",
+                "allowable_current_A": "14"
+              },
+              "7": {
+                "outer_diameter_mm": "14.9",
+                "allowable_current_A": "14"
+              }
+            }
+          },
+          {
+            "size_or_area": "2.0",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": "10.6",
+                "allowable_current_A": "27"
+              },
+              "3": {
+                "outer_diameter_mm": "11.1",
+                "allowable_current_A": "23"
+              },
+              "4": {
+                "outer_diameter_mm": "12.2",
+                "allowable_current_A": "21"
+              },
+              "5": {
+                "outer_diameter_mm": "13.3",
+                "allowable_current_A": "19"
+              },
+              "6": {
+                "outer_diameter_mm": "14.9",
+                "allowable_current_A": "18"
+              },
+              "7": {
+                "outer_diameter_mm": "16.2",
+                "allowable_current_A": "18"
+              }
+            }
+          },
+          {
+            "size_or_area": "3.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": "12.2",
+                "allowable_current_A": "39"
+              },
+              "3": {
+                "outer_diameter_mm": "12.9",
+                "allowable_current_A": "33"
+              },
+              "4": {
+                "outer_diameter_mm": "14.1",
+                "allowable_current_A": "30"
+              },
+              "5": {
+                "outer_diameter_mm": "15.5",
+                "allowable_current_A": "28"
+              },
+              "6": {
+                "outer_diameter_mm": "17.2",
+                "allowable_current_A": "27"
+              },
+              "7": {
+                "outer_diameter_mm": "18.7",
+                "allowable_current_A": "25"
+              }
+            }
+          },
+          {
+            "size_or_area": "5.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "8.4",
+                "allowable_current_A": "62"
+              },
+              "2": {
+                "outer_diameter_mm": "14.4",
+                "allowable_current_A": "51"
+              },
+              "3": {
+                "outer_diameter_mm": "15.2",
+                "allowable_current_A": "44"
+              },
+              "4": {
+                "outer_diameter_mm": "16.8",
+                "allowable_current_A": "40"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": "20.7",
+                "allowable_current_A": "35"
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "8.0",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "9.2",
+                "allowable_current_A": "77"
+              },
+              "2": {
+                "outer_diameter_mm": "15.8",
+                "allowable_current_A": "63"
+              },
+              "3": {
+                "outer_diameter_mm": "16.7",
+                "allowable_current_A": "54"
+              },
+              "4": {
+                "outer_diameter_mm": "18.4",
+                "allowable_current_A": "49"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "14",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "10.6",
+                "allowable_current_A": "105"
+              },
+              "2": {
+                "outer_diameter_mm": "18.4",
+                "allowable_current_A": "89"
+              },
+              "3": {
+                "outer_diameter_mm": "19.7",
+                "allowable_current_A": "76"
+              },
+              "4": {
+                "outer_diameter_mm": "21.7",
+                "allowable_current_A": "69"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "22",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "13.4",
+                "allowable_current_A": "145"
+              },
+              "2": {
+                "outer_diameter_mm": "24.4",
+                "allowable_current_A": "120"
+              },
+              "3": {
+                "outer_diameter_mm": "26.1",
+                "allowable_current_A": "100"
+              },
+              "4": {
+                "outer_diameter_mm": "28.8",
+                "allowable_current_A": "93"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "38",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "15.9",
+                "allowable_current_A": "205"
+              },
+              "2": {
+                "outer_diameter_mm": "29.2",
+                "allowable_current_A": "165"
+              },
+              "3": {
+                "outer_diameter_mm": "31.2",
+                "allowable_current_A": "140"
+              },
+              "4": {
+                "outer_diameter_mm": "34.6",
+                "allowable_current_A": "125"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "60",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "19.4",
+                "allowable_current_A": "280"
+              },
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "38.7",
+                "allowable_current_A": "185"
+              },
+              "4": {
+                "outer_diameter_mm": "43.1",
+                "allowable_current_A": "170"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "100",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "24.6",
+                "allowable_current_A": "390"
+              },
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "50.0",
+                "allowable_current_A": "265"
+              },
+              "4": {
+                "outer_diameter_mm": "55.6",
+                "allowable_current_A": "240"
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "150",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "28.5",
+                "allowable_current_A": "494"
+              },
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "58.5",
+                "allowable_current_A": "338"
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "5": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "6": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "7": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "",
+        "sub_category": "8～30心",
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": []
+      }
+    ]
+  },
+  "2CT": {
+    "category_title": "2CT",
+    "captions": [
+      "上段：標準仕上外径（約mm）",
+      "下段： 許容電流（A）　参考値で保証値ではありません。"
+    ],
+    "tables": [
+      {
+        "cable_type": "2CT",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "0.75",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "10.4",
+                "allowable_current_A": "12"
+              },
+              "3": {
+                "outer_diameter_mm": "10.9",
+                "allowable_current_A": "10"
+              },
+              "4": {
+                "outer_diameter_mm": "11.8",
+                "allowable_current_A": "9"
+              }
+            }
+          },
+          {
+            "size_or_area": "1.25",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "11.2",
+                "allowable_current_A": "16"
+              },
+              "3": {
+                "outer_diameter_mm": "11.8",
+                "allowable_current_A": "14"
+              },
+              "4": {
+                "outer_diameter_mm": "13.0",
+                "allowable_current_A": "13"
+              }
+            }
+          },
+          {
+            "size_or_area": "2.0",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "11.8",
+                "allowable_current_A": "22"
+              },
+              "3": {
+                "outer_diameter_mm": "12.6",
+                "allowable_current_A": "19"
+              },
+              "4": {
+                "outer_diameter_mm": "13.9",
+                "allowable_current_A": "17"
+              }
+            }
+          },
+          {
+            "size_or_area": "3.5",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "13.4",
+                "allowable_current_A": "32"
+              },
+              "3": {
+                "outer_diameter_mm": "14.3",
+                "allowable_current_A": "28"
+              },
+              "4": {
+                "outer_diameter_mm": "15.8",
+                "allowable_current_A": "25"
+              }
+            }
+          },
+          {
+            "size_or_area": "5.5",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "14.8",
+                "allowable_current_A": "41"
+              },
+              "3": {
+                "outer_diameter_mm": "15.8",
+                "allowable_current_A": "36"
+              },
+              "4": {
+                "outer_diameter_mm": "17.4",
+                "allowable_current_A": "32"
+              }
+            }
+          },
+          {
+            "size_or_area": "8.0",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "16.2",
+                "allowable_current_A": "51"
+              },
+              "3": {
+                "outer_diameter_mm": "17.3",
+                "allowable_current_A": "44"
+              },
+              "4": {
+                "outer_diameter_mm": "19.1",
+                "allowable_current_A": "39"
+              }
+            }
+          },
+          {
+            "size_or_area": "14",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "20.2",
+                "allowable_current_A": "71"
+              },
+              "3": {
+                "outer_diameter_mm": "21.6",
+                "allowable_current_A": "62"
+              },
+              "4": {
+                "outer_diameter_mm": "24.0",
+                "allowable_current_A": "55"
+              }
+            }
+          },
+          {
+            "size_or_area": "22",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "25.2",
+                "allowable_current_A": "95"
+              },
+              "3": {
+                "outer_diameter_mm": "27.0",
+                "allowable_current_A": "83"
+              },
+              "4": {
+                "outer_diameter_mm": "29.9",
+                "allowable_current_A": "74"
+              }
+            }
+          },
+          {
+            "size_or_area": "38",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": "31.8",
+                "allowable_current_A": "130"
+              },
+              "3": {
+                "outer_diameter_mm": "34.2",
+                "allowable_current_A": "110"
+              },
+              "4": {
+                "outer_diameter_mm": "37.9",
+                "allowable_current_A": "100"
+              }
+            }
+          },
+          {
+            "size_or_area": "60",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "40.2",
+                "allowable_current_A": "150"
+              },
+              "4": {
+                "outer_diameter_mm": "44.8",
+                "allowable_current_A": "135"
+              }
+            }
+          },
+          {
+            "size_or_area": "100",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "51.5",
+                "allowable_current_A": "215"
+              },
+              "4": {
+                "outer_diameter_mm": "57.3",
+                "allowable_current_A": "197"
+              }
+            }
+          },
+          {
+            "size_or_area": "150",
+            "cores": {
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "60.0",
+                "allowable_current_A": "271"
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "SL-2CT",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "0.75",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": "9.0",
+                "allowable_current_A": "15"
+              },
+              "3": {
+                "outer_diameter_mm": "9.4",
+                "allowable_current_A": "13"
+              },
+              "4": {
+                "outer_diameter_mm": "10.4",
+                "allowable_current_A": "12"
+              }
+            }
+          },
+          {
+            "size_or_area": "1.25",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": "9.8",
+                "allowable_current_A": "21"
+              },
+              "3": {
+                "outer_diameter_mm": "10.5",
+                "allowable_current_A": "18"
+              },
+              "4": {
+                "outer_diameter_mm": "11.3",
+                "allowable_current_A": "16"
+              }
+            }
+          },
+          {
+            "size_or_area": "2.0",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": "10.6",
+                "allowable_current_A": "27"
+              },
+              "3": {
+                "outer_diameter_mm": "11.1",
+                "allowable_current_A": "23"
+              },
+              "4": {
+                "outer_diameter_mm": "12.2",
+                "allowable_current_A": "21"
+              }
+            }
+          },
+          {
+            "size_or_area": "3.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": "12.2",
+                "allowable_current_A": "39"
+              },
+              "3": {
+                "outer_diameter_mm": "12.9",
+                "allowable_current_A": "33"
+              },
+              "4": {
+                "outer_diameter_mm": "14.1",
+                "allowable_current_A": "30"
+              }
+            }
+          },
+          {
+            "size_or_area": "5.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": "14.4",
+                "allowable_current_A": "51"
+              },
+              "3": {
+                "outer_diameter_mm": "15.2",
+                "allowable_current_A": "44"
+              },
+              "4": {
+                "outer_diameter_mm": "16.8",
+                "allowable_current_A": "40"
+              }
+            }
+          },
+          {
+            "size_or_area": "8.0",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "2": {
+                "outer_diameter_mm": "15.8",
+                "allowable_current_A": "63"
+              },
+              "3": {
+                "outer_diameter_mm": "16.7",
+                "allowable_current_A": "54"
+              },
+              "4": {
+                "outer_diameter_mm": "18.4",
+                "allowable_current_A": "49"
+              }
+            }
+          },
+          {
+            "size_or_area": "14",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "10.6",
+                "allowable_current_A": "105"
+              },
+              "2": {
+                "outer_diameter_mm": "18.4",
+                "allowable_current_A": "89"
+              },
+              "3": {
+                "outer_diameter_mm": "19.7",
+                "allowable_current_A": "76"
+              },
+              "4": {
+                "outer_diameter_mm": "21.7",
+                "allowable_current_A": "69"
+              }
+            }
+          },
+          {
+            "size_or_area": "22",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "13.2",
+                "allowable_current_A": "145"
+              },
+              "2": {
+                "outer_diameter_mm": "24.0",
+                "allowable_current_A": "120"
+              },
+              "3": {
+                "outer_diameter_mm": "25.7",
+                "allowable_current_A": "100"
+              },
+              "4": {
+                "outer_diameter_mm": "28.3",
+                "allowable_current_A": "93"
+              }
+            }
+          },
+          {
+            "size_or_area": "38",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "15.6",
+                "allowable_current_A": "205"
+              },
+              "2": {
+                "outer_diameter_mm": "28.4",
+                "allowable_current_A": "165"
+              },
+              "3": {
+                "outer_diameter_mm": "30.4",
+                "allowable_current_A": "140"
+              },
+              "4": {
+                "outer_diameter_mm": "33.7",
+                "allowable_current_A": "125"
+              }
+            }
+          },
+          {
+            "size_or_area": "60",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "19.1",
+                "allowable_current_A": "275"
+              },
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "38.0",
+                "allowable_current_A": "185"
+              },
+              "4": {
+                "outer_diameter_mm": "42.2",
+                "allowable_current_A": "170"
+              }
+            }
+          },
+          {
+            "size_or_area": "80",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "22.3",
+                "allowable_current_A": "335"
+              },
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "44.9",
+                "allowable_current_A": "225"
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "100",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "24.1",
+                "allowable_current_A": "390"
+              },
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "48.7",
+                "allowable_current_A": "260"
+              },
+              "4": {
+                "outer_diameter_mm": "54.2",
+                "allowable_current_A": "240"
+              }
+            }
+          },
+          {
+            "size_or_area": "150",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "27.4",
+                "allowable_current_A": "485"
+              },
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": "55.8",
+                "allowable_current_A": "330"
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          },
+          {
+            "size_or_area": "200",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "31.8",
+                "allowable_current_A": "585"
+              },
+              "2": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "3": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              },
+              "4": {
+                "outer_diameter_mm": null,
+                "allowable_current_A": null
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "KIV": {
+    "category_title": "KIV",
+    "captions": [
+      "上段：標準仕上外径（約mm）",
+      "下段： 許容電流（A）　参考値で保証値ではありません。",
+      "下段： 許容電流（A）は周囲温度40℃の下で、導体温度が80℃となる電流です。",
+      "参考値で保証値ではありません。",
+      "fはフレキシブルを示します。 ※0.3㎟はAVSのみの取扱いです。"
+    ],
+    "tables": [
+      {
+        "cable_type": "600V KIV",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "0.3",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "1.8",
+                "allowable_current_A": "6"
+              }
+            }
+          },
+          {
+            "size_or_area": "0.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "2.5",
+                "allowable_current_A": "10"
+              }
+            }
+          },
+          {
+            "size_or_area": "0.75",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "2.7",
+                "allowable_current_A": "13"
+              }
+            }
+          },
+          {
+            "size_or_area": "1.25",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "3.1",
+                "allowable_current_A": "18"
+              }
+            }
+          },
+          {
+            "size_or_area": "2.0",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "3.4",
+                "allowable_current_A": "24"
+              }
+            }
+          },
+          {
+            "size_or_area": "3.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "4.1",
+                "allowable_current_A": "35"
+              }
+            }
+          },
+          {
+            "size_or_area": "5.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "5.1",
+                "allowable_current_A": "50"
+              }
+            }
+          },
+          {
+            "size_or_area": "8",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "6.1",
+                "allowable_current_A": "60"
+              }
+            }
+          },
+          {
+            "size_or_area": "14",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "7.7",
+                "allowable_current_A": "88"
+              }
+            }
+          },
+          {
+            "size_or_area": "22",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "10.5",
+                "allowable_current_A": "124"
+              }
+            }
+          },
+          {
+            "size_or_area": "38",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "13.0",
+                "allowable_current_A": "176"
+              }
+            }
+          },
+          {
+            "size_or_area": "50",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "14.0",
+                "allowable_current_A": "206"
+              }
+            }
+          },
+          {
+            "size_or_area": "60",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "15.5",
+                "allowable_current_A": "239"
+              }
+            }
+          },
+          {
+            "size_or_area": "80",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "17.5",
+                "allowable_current_A": "291"
+              }
+            }
+          },
+          {
+            "size_or_area": "100",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "19.5",
+                "allowable_current_A": "339"
+              }
+            }
+          },
+          {
+            "size_or_area": "150",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "24.0",
+                "allowable_current_A": "428"
+              }
+            }
+          },
+          {
+            "size_or_area": "200",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "26.0",
+                "allowable_current_A": "495"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "600V H-KIV",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "0.3",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "1.8",
+                "allowable_current_A": "7"
+              }
+            }
+          },
+          {
+            "size_or_area": "0.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "2.5",
+                "allowable_current_A": "12"
+              }
+            }
+          },
+          {
+            "size_or_area": "0.75",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "2.7",
+                "allowable_current_A": "15"
+              }
+            }
+          },
+          {
+            "size_or_area": "1.25",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "3.1",
+                "allowable_current_A": "21"
+              }
+            }
+          },
+          {
+            "size_or_area": "2.0",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "3.4",
+                "allowable_current_A": "28"
+              }
+            }
+          },
+          {
+            "size_or_area": "3.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "4.1",
+                "allowable_current_A": "41"
+              }
+            }
+          },
+          {
+            "size_or_area": "5.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "5.1",
+                "allowable_current_A": "56"
+              }
+            }
+          },
+          {
+            "size_or_area": "8",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "6.1",
+                "allowable_current_A": "72"
+              }
+            }
+          },
+          {
+            "size_or_area": "14",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "7.7",
+                "allowable_current_A": "105"
+              }
+            }
+          },
+          {
+            "size_or_area": "22",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "10.5",
+                "allowable_current_A": "148"
+              }
+            }
+          },
+          {
+            "size_or_area": "38",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "13.0",
+                "allowable_current_A": "209"
+              }
+            }
+          },
+          {
+            "size_or_area": "60",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "15.5",
+                "allowable_current_A": "285"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "600V KIV バーチカル",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "0.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "2.5",
+                "allowable_current_A": "10"
+              }
+            }
+          },
+          {
+            "size_or_area": "0.75",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "2.7",
+                "allowable_current_A": "12"
+              }
+            }
+          },
+          {
+            "size_or_area": "1.25",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "3.1",
+                "allowable_current_A": "16"
+              }
+            }
+          },
+          {
+            "size_or_area": "2.0",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "3.4",
+                "allowable_current_A": "22"
+              }
+            }
+          },
+          {
+            "size_or_area": "3.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "4.1",
+                "allowable_current_A": "33"
+              }
+            }
+          },
+          {
+            "size_or_area": "5.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "5.1",
+                "allowable_current_A": "44"
+              }
+            }
+          },
+          {
+            "size_or_area": "8",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "6.1",
+                "allowable_current_A": "57"
+              }
+            }
+          },
+          {
+            "size_or_area": "14",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "7.7",
+                "allowable_current_A": "83"
+              }
+            }
+          },
+          {
+            "size_or_area": "22",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "10.5",
+                "allowable_current_A": "117"
+              }
+            }
+          },
+          {
+            "size_or_area": "38",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "13.0",
+                "allowable_current_A": "166"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "AV・AVS※",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "0.3",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "1.8",
+                "allowable_current_A": "9"
+              }
+            }
+          },
+          {
+            "size_or_area": "0.5f",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "2.1",
+                "allowable_current_A": "12"
+              }
+            }
+          },
+          {
+            "size_or_area": "0.75f",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "2.3",
+                "allowable_current_A": "15"
+              }
+            }
+          },
+          {
+            "size_or_area": "0.85",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "2.4",
+                "allowable_current_A": "16"
+              }
+            }
+          },
+          {
+            "size_or_area": "1.25",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "2.7",
+                "allowable_current_A": "21"
+              }
+            }
+          },
+          {
+            "size_or_area": "2",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "3.1",
+                "allowable_current_A": "28"
+              }
+            }
+          },
+          {
+            "size_or_area": "3",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "3.8",
+                "allowable_current_A": "38"
+              }
+            }
+          },
+          {
+            "size_or_area": "5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "4.6",
+                "allowable_current_A": "51"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "TBC": {
+    "category_title": "TBC",
+    "captions": [],
+    "tables": [
+      {
+        "cable_type": "TBC",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "0.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "1.7×0.4",
+                "allowable_current_A": "13"
+              }
+            }
+          },
+          {
+            "size_or_area": "0.75",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "2.7×0.7",
+                "allowable_current_A": "17"
+              }
+            }
+          },
+          {
+            "size_or_area": "1.25",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "3.6×0.9",
+                "allowable_current_A": "24"
+              }
+            }
+          },
+          {
+            "size_or_area": "2",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "4.7×1.0",
+                "allowable_current_A": "31"
+              }
+            }
+          },
+          {
+            "size_or_area": "3.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "7.0×1.0",
+                "allowable_current_A": "45"
+              }
+            }
+          },
+          {
+            "size_or_area": "5.5",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "9.6×1.4",
+                "allowable_current_A": "59"
+              }
+            }
+          },
+          {
+            "size_or_area": "8",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "15×1.9",
+                "allowable_current_A": "75"
+              }
+            }
+          },
+          {
+            "size_or_area": "14",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "18×2.0",
+                "allowable_current_A": "108"
+              }
+            }
+          },
+          {
+            "size_or_area": "22",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "25×2.3",
+                "allowable_current_A": "143"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "cable_type": "TBC",
+        "sub_category": null,
+        "size_or_area_unit": "公称断面積（㎟）",
+        "data": [
+          {
+            "size_or_area": "30",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "26×2.9",
+                "allowable_current_A": "174"
+              }
+            }
+          },
+          {
+            "size_or_area": "38",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "29×3.4",
+                "allowable_current_A": "201"
+              }
+            }
+          },
+          {
+            "size_or_area": "50",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "35×3.9",
+                "allowable_current_A": "239"
+              }
+            }
+          },
+          {
+            "size_or_area": "60",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "37×4.3",
+                "allowable_current_A": "268"
+              }
+            }
+          },
+          {
+            "size_or_area": "80",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "41×3.2",
+                "allowable_current_A": "326"
+              }
+            }
+          },
+          {
+            "size_or_area": "100",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "46×6.6",
+                "allowable_current_A": "374"
+              }
+            }
+          },
+          {
+            "size_or_area": "150",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "55×11",
+                "allowable_current_A": "475"
+              }
+            }
+          },
+          {
+            "size_or_area": "200",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "70×11",
+                "allowable_current_A": "571"
+              }
+            }
+          },
+          {
+            "size_or_area": "250",
+            "cores": {
+              "1": {
+                "outer_diameter_mm": "78×9.3",
+                "allowable_current_A": "658"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

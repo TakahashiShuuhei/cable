@@ -29,40 +29,43 @@ export const conduitTypes: ConduitType[] = [
   { id: 've', name: 'VE管', fullName: '硬質塩化ビニル電線管', material: '硬質塩化ビニル' },
 ]
 
+// 断面積計算ヘルパー（内径から）
+const circleArea = (d: number) => Math.PI * Math.pow(d / 2, 2)
+
 /**
  * 電線管サイズマスターデータ
  */
 export const conduitSizes: ConduitSize[] = [
   // E管
-  { id: 'e-19', type: 'e', nominalSize: '19', innerDiameter: 19.1, innerArea: 286.5 },
-  { id: 'e-25', type: 'e', nominalSize: '25', innerDiameter: 25.0, innerArea: 490.9 },
-  { id: 'e-31', type: 'e', nominalSize: '31', innerDiameter: 31.0, innerArea: 754.8 },
-  { id: 'e-39', type: 'e', nominalSize: '39', innerDiameter: 38.5, innerArea: 1164.2 },
-  { id: 'e-51', type: 'e', nominalSize: '51', innerDiameter: 50.8, innerArea: 2027.0 },
-  { id: 'e-63', type: 'e', nominalSize: '63', innerDiameter: 63.0, innerArea: 3117.2 },
-  { id: 'e-75', type: 'e', nominalSize: '75', innerDiameter: 75.8, innerArea: 4513.7 },
+  { id: 'e-19', type: 'e', nominalSize: '19', innerDiameter: 16.7, innerArea: circleArea(16.7) },
+  { id: 'e-25', type: 'e', nominalSize: '25', innerDiameter: 23.0, innerArea: circleArea(23.0) },
+  { id: 'e-31', type: 'e', nominalSize: '31', innerDiameter: 29.0, innerArea: circleArea(29.0) },
+  { id: 'e-39', type: 'e', nominalSize: '39', innerDiameter: 35.3, innerArea: circleArea(35.3) },
+  { id: 'e-51', type: 'e', nominalSize: '51', innerDiameter: 48.0, innerArea: circleArea(48.0) },
+  { id: 'e-63', type: 'e', nominalSize: '63', innerDiameter: 60.3, innerArea: circleArea(60.3) },
+  { id: 'e-75', type: 'e', nominalSize: '75', innerDiameter: 72.6, innerArea: circleArea(72.6) },
   // G管
-  { id: 'g-16', type: 'g', nominalSize: '16', innerDiameter: 15.8, innerArea: 196.1 },
-  { id: 'g-22', type: 'g', nominalSize: '22', innerDiameter: 21.0, innerArea: 346.4 },
-  { id: 'g-28', type: 'g', nominalSize: '28', innerDiameter: 26.6, innerArea: 555.7 },
-  { id: 'g-36', type: 'g', nominalSize: '36', innerDiameter: 35.0, innerArea: 962.1 },
-  { id: 'g-42', type: 'g', nominalSize: '42', innerDiameter: 40.4, innerArea: 1281.6 },
-  { id: 'g-54', type: 'g', nominalSize: '54', innerDiameter: 52.6, innerArea: 2173.3 },
+  { id: 'g-16', type: 'g', nominalSize: '16', innerDiameter: 16.4, innerArea: circleArea(16.4) },
+  { id: 'g-22', type: 'g', nominalSize: '22', innerDiameter: 21.9, innerArea: circleArea(21.9) },
+  { id: 'g-28', type: 'g', nominalSize: '28', innerDiameter: 28.3, innerArea: circleArea(28.3) },
+  { id: 'g-36', type: 'g', nominalSize: '36', innerDiameter: 36.9, innerArea: circleArea(36.9) },
+  { id: 'g-42', type: 'g', nominalSize: '42', innerDiameter: 42.8, innerArea: circleArea(42.8) },
+  { id: 'g-54', type: 'g', nominalSize: '54', innerDiameter: 54.0, innerArea: circleArea(54.0) },
   // PF管
-  { id: 'pf-14', type: 'pf', nominalSize: '14', innerDiameter: 14.0, innerArea: 153.9 },
-  { id: 'pf-16', type: 'pf', nominalSize: '16', innerDiameter: 16.0, innerArea: 201.1 },
-  { id: 'pf-22', type: 'pf', nominalSize: '22', innerDiameter: 22.0, innerArea: 380.1 },
-  { id: 'pf-28', type: 'pf', nominalSize: '28', innerDiameter: 28.0, innerArea: 615.8 },
-  { id: 'pf-36', type: 'pf', nominalSize: '36', innerDiameter: 36.0, innerArea: 1017.9 },
-  { id: 'pf-42', type: 'pf', nominalSize: '42', innerDiameter: 42.0, innerArea: 1385.4 },
+  { id: 'pf-14', type: 'pf', nominalSize: '14', innerDiameter: 14.0, innerArea: circleArea(14.0) },
+  { id: 'pf-16', type: 'pf', nominalSize: '16', innerDiameter: 16.0, innerArea: circleArea(16.0) },
+  { id: 'pf-22', type: 'pf', nominalSize: '22', innerDiameter: 22.0, innerArea: circleArea(22.0) },
+  { id: 'pf-28', type: 'pf', nominalSize: '28', innerDiameter: 28.0, innerArea: circleArea(28.0) },
+  { id: 'pf-36', type: 'pf', nominalSize: '36', innerDiameter: 36.0, innerArea: circleArea(36.0) },
+  { id: 'pf-42', type: 'pf', nominalSize: '42', innerDiameter: 42.0, innerArea: circleArea(42.0) },
   // VE管
-  { id: 've-14', type: 've', nominalSize: '14', innerDiameter: 14.0, innerArea: 153.9 },
-  { id: 've-16', type: 've', nominalSize: '16', innerDiameter: 16.0, innerArea: 201.1 },
-  { id: 've-22', type: 've', nominalSize: '22', innerDiameter: 22.0, innerArea: 380.1 },
-  { id: 've-28', type: 've', nominalSize: '28', innerDiameter: 28.0, innerArea: 615.8 },
-  { id: 've-36', type: 've', nominalSize: '36', innerDiameter: 36.0, innerArea: 1017.9 },
-  { id: 've-42', type: 've', nominalSize: '42', innerDiameter: 42.0, innerArea: 1385.4 },
-  { id: 've-54', type: 've', nominalSize: '54', innerDiameter: 54.0, innerArea: 2290.2 },
+  { id: 've-14', type: 've', nominalSize: '14', innerDiameter: 14.0, innerArea: circleArea(14.0) },
+  { id: 've-16', type: 've', nominalSize: '16', innerDiameter: 16.0, innerArea: circleArea(16.0) },
+  { id: 've-22', type: 've', nominalSize: '22', innerDiameter: 22.0, innerArea: circleArea(22.0) },
+  { id: 've-28', type: 've', nominalSize: '28', innerDiameter: 28.0, innerArea: circleArea(28.0) },
+  { id: 've-36', type: 've', nominalSize: '36', innerDiameter: 36.0, innerArea: circleArea(36.0) },
+  { id: 've-42', type: 've', nominalSize: '42', innerDiameter: 42.0, innerArea: circleArea(42.0) },
+  { id: 've-54', type: 've', nominalSize: '54', innerDiameter: 54.0, innerArea: circleArea(54.0) },
 ]
 
 /**

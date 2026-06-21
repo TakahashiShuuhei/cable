@@ -4,7 +4,7 @@ import { useCalculation } from '../contexts/CalculationContext'
 
 export function Header() {
   const { toggleTheme } = useTheme()
-  const { clearAll, saveToHistory, state } = useCalculation()
+  const { clearAll } = useCalculation()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
 
@@ -19,11 +19,6 @@ export function Header() {
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
-  const handleSaveToHistory = () => {
-    saveToHistory()
-    setIsMenuOpen(false)
-  }
-
   const handleClearAll = () => {
     clearAll()
     setIsMenuOpen(false)
@@ -33,8 +28,6 @@ export function Header() {
     toggleTheme()
     setIsMenuOpen(false)
   }
-
-  const canSave = state.conduitSize && state.wires.length > 0
 
   return (
     <header className="bg-primary text-white px-4 py-3 flex items-center justify-between">
@@ -52,13 +45,6 @@ export function Header() {
 
         {isMenuOpen && (
           <div className="absolute right-0 mt-2 w-48 bg-surface rounded-lg shadow-lg border border-border overflow-hidden z-50">
-            <button
-              onClick={handleSaveToHistory}
-              disabled={!canSave}
-              className="w-full px-4 py-3 text-left text-on-surface hover:bg-background disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              履歴に保存
-            </button>
             <button
               onClick={handleClearAll}
               className="w-full px-4 py-3 text-left text-on-surface hover:bg-background"
