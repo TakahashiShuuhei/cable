@@ -96,7 +96,15 @@ export function MainPanel() {
     }
   }
 
+  // 編集中のデータがあるか判定
+  const hasUnsavedChanges = state.conduitSizeId && state.wires.length > 0
+
   const handleRestoreHistory = (item: HistoryItem) => {
+    if (hasUnsavedChanges) {
+      if (!window.confirm('現在の編集内容が破棄されます。読み込みますか？')) {
+        return
+      }
+    }
     restoreFromShareData({
       conduitSizeId: item.conduitSizeId,
       wireEntries: item.wireEntries,
@@ -107,6 +115,9 @@ export function MainPanel() {
   }
 
   const handleDeleteHistory = (id: string) => {
+    if (!window.confirm('この保存データを削除しますか？')) {
+      return
+    }
     deleteHistoryItem(id)
     setHistory(loadHistory())
     if (expandedHistoryId === id) {

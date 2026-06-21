@@ -2,9 +2,13 @@ import { useState, useRef, useEffect } from 'react'
 import { useTheme } from '../contexts/ThemeContext'
 import { useCalculation } from '../contexts/CalculationContext'
 
-export function Header() {
+interface HeaderProps {
+  onHelpClick: () => void
+}
+
+export function Header({ onHelpClick }: HeaderProps) {
   const { toggleTheme } = useTheme()
-  const { clearAll } = useCalculation()
+  const { state, clearAll } = useCalculation()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
 
@@ -19,7 +23,15 @@ export function Header() {
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
+  const hasUnsavedChanges = state.conduitSizeId && state.wires.length > 0
+
   const handleClearAll = () => {
+    if (hasUnsavedChanges) {
+      if (!window.confirm('現在の編集内容が破棄されます。クリアしますか？')) {
+        setIsMenuOpen(false)
+        return
+      }
+    }
     clearAll()
     setIsMenuOpen(false)
   }
@@ -56,6 +68,15 @@ export function Header() {
               className="w-full px-4 py-3 text-left text-on-surface hover:bg-background"
             >
               テーマ切替
+            </button>
+            <button
+              onClick={() => {
+                setIsMenuOpen(false)
+                onHelpClick()
+              }}
+              className="w-full px-4 py-3 text-left text-on-surface hover:bg-background"
+            >
+              ヘルプ
             </button>
           </div>
         )}
