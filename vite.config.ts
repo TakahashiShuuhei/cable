@@ -5,12 +5,12 @@ import { resolve } from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/cable/',
+  base: '/apps/cable/',
   plugins: [
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['icons/*.png'],
+      includeAssets: ['icons/*.svg'],
       manifest: {
         name: '電線管占有率計算',
         short_name: '占有率計算',
@@ -21,14 +21,9 @@ export default defineConfig({
         orientation: 'portrait',
         icons: [
           {
-            src: 'icons/icon-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: 'icons/icon-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
+            src: 'icons/icon-192x192.svg',
+            sizes: 'any',
+            type: 'image/svg+xml',
           },
         ],
       },
