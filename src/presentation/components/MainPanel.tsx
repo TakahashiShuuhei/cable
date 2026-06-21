@@ -33,7 +33,6 @@ export function MainPanel() {
 
   // 履歴
   const [history, setHistory] = useState<HistoryItem[]>([])
-  const [showHistory, setShowHistory] = useState(false)
   const [expandedHistoryId, setExpandedHistoryId] = useState<string | null>(null)
   const [highlightedHistoryId, setHighlightedHistoryId] = useState<string | null>(null)
 
@@ -68,7 +67,6 @@ export function MainPanel() {
 
     setShowSaveDialog(false)
     setSaveName('')
-    setShowHistory(true)
 
     // スクロールとハイライト
     setTimeout(() => {
@@ -104,6 +102,8 @@ export function MainPanel() {
       wireEntries: item.wireEntries,
     })
     setExpandedHistoryId(null)
+    // 最上部へスクロール
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   const handleDeleteHistory = (id: string) => {
@@ -488,21 +488,16 @@ export function MainPanel() {
 
       {/* 履歴セクション */}
       <div ref={historySectionRef} className="mt-6 pt-4 border-t border-border">
-        <button
-          onClick={() => setShowHistory(!showHistory)}
-          className="w-full flex items-center justify-between text-on-surface-secondary text-sm"
-        >
-          <span>保存済み ({history.length})</span>
-          <span>{showHistory ? '▲' : '▼'}</span>
-        </button>
+        <div className="text-on-surface-secondary text-sm mb-3">
+          保存済み ({history.length})
+        </div>
 
-        {showHistory && (
-          <div className="mt-3 space-y-2">
-            {sortedHistory.length === 0 ? (
-              <p className="text-on-surface-secondary text-sm text-center py-2">
-                保存済みの計算はありません
-              </p>
-            ) : (
+        <div className="space-y-2">
+          {sortedHistory.length === 0 ? (
+            <p className="text-on-surface-secondary text-sm text-center py-2">
+              保存済みの計算はありません
+            </p>
+          ) : (
               <AnimatePresence>
                 {sortedHistory.map((item) => {
                   const isExpanded = expandedHistoryId === item.id
@@ -616,8 +611,7 @@ export function MainPanel() {
                 })}
               </AnimatePresence>
             )}
-          </div>
-        )}
+        </div>
       </div>
     </section>
   )
